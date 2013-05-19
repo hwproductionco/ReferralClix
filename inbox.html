@@ -6,11 +6,11 @@
 <!-- BEGIN HEAD -->
 <head>
 	<meta charset="utf-8" />
-	<title>ReferralClix | Reports | All Customers</title>
+	<title>ReferralClix | Configure Lead Scoring</title>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
-	   <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet" />
+	<link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet" />
    <link href="assets/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
    <link href="assets/css/style.css" rel="stylesheet" />
@@ -28,6 +28,19 @@
    <link rel="stylesheet" href="assets/bootstrap-toggle-buttons/static/stylesheets/bootstrap-toggle-buttons.css" />
    <link rel="stylesheet" href="assets/data-tables/DT_bootstrap.css" />
    <link rel="stylesheet" type="text/css" href="assets/bootstrap-daterangepicker/daterangepicker.css" />
+   
+   <style type="text/css">
+            .show { display: block;  }
+            .hide { display: none; }
+        </style>
+        
+        <script type="text/javascript">
+            function showSelect() {
+                var select = document.getElementById('my_select');
+                select.className = 'show';
+            }
+        </script>
+   
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
@@ -101,6 +114,7 @@
 						<!-- END USER LOGIN DROPDOWN -->
 					</ul>
 					<!-- END TOP NAVIGATION MENU -->	
+				</div>	
 				</div>
 			</div>
 		</div>
@@ -149,32 +163,30 @@
                 </li>
 				
 				
-				<li class="has-sub">
+				<li class="has-sub ">
 					<a href="javascript:;" class="">
 					<i class="icon-book"></i> Campaigns
 					<span class="arrow"></span>
 					</a>
                 <ul class="sub"><li><a class="" href="view_all_programs.html">View All</a></li>
                 <li><a class="" href="add_new_campaign.html">Add New Campaign</a></li> 
-               </ul></li><li class="has-sub active">
+               </ul></li> <li class="has-sub">
 					<a href="javascript:;" class="">
 					<i class="icon-bar-chart"></i> Reports
 					<span class="arrow"></span>
 					</a>
 					<ul class="sub">
-						<li><a class="" href="all_transactions.html">All Transactions</a></li>
+						<li><a class="" href="all_transactions.html">All Transactions</li></a>
 						<li><a class="" href="redeemed_only.html">Audit: Redeemed Only</a></li>
 						<li><a class="" href="total_transactions.html">Audit: Total</a></li>
-<li class="active"><a class="" href="all_customers.html">All Customers</a></li>
-<li><a class="" href="new_customers.html">New Customers</a></li>
-<li><a class="" href="frequent_customers.html">Frequent Customers</a></li>
-<li><a class="" href="Inactive_customers.html">Inactive Advocates</a></li>
-<li><a class="" href="birthday.html">Birthday</a></li>
-<li><a class="" href="custom_date.html">Custom Date</a></li>
-
-<li><a class="" href="customer_balance.html">Customer Balance</a></li><li><a class="" href="#">Videos Created</a></li><li><a class="" href="#">Videos Watched</a></li><li><a class="" href="#">Social Media Integrations</a></li></ul></li>
-				
-				 <li class="has-sub"><a href="javascript:;" class="">
+						<li><a class="" href="all_customers.html">All Customers</a></li>
+						<li><a class="" href="new_customers.html">New Customers</a></li>
+						<li><a class="" href="frequent_customers.html">Frequent Customers</a></li>
+						<li><a class="" href="Inactive_customers.html">Inactive Advocates</a></li>
+						<li><a class="" href="birthday.html">Birthday</a></li>
+						<li><a class="" href="custom_date.html">Custom Date</a></li>
+						<li><a class="" href="customer_balance.html">Customer Balance</a></li><li><a class="" href="#">Videos Created</a></li><li><a class="" href="#">Videos Watched</a></li><li><a class="" href="#">Social Media Integrations</a></li></ul></li>
+                 <li class="has-sub"><a href="javascript:;" class="">
 					<i class="icon-sitemap"></i> Lead Site<span class="arrow"></span>
 					</a><ul class="sub">
 						<li><a href="lead_site_builder.html">Template Settings</li></a>
@@ -187,7 +199,7 @@
 					<ul class="sub">
 						<li><a class="" href="view_all_apps.html">View Apps</a></li><li><a class="" href="add_new_app.html">Create New App</a></li>
 </ul></li>
-		<li class="has-sub">
+				<li class="has-sub">
 					<a href="" class="">
 					<i class="icon-info-sign"></i> Technical Support</a>
 					</li>
@@ -201,46 +213,13 @@
 				<!-- BEGIN PAGE HEADER-->
 				<div class="row-fluid">
 					<div class="span12">
-						<!-- BEGIN STYLE CUSTOMIZER-->
-						<!-- <div id="styler" class="hidden-phone">
-							<a href="configure_points_program.html"><i class="icon-cog"></i></a>
-							<span class="settings">
-								<span class="text">Style:</span>
-								<span class="colors">
-									<span class="color-default" data-style="default">
-									</span>
-									<span class="color-grey" data-style="grey">
-									</span>
-									<span class="color-navygrey" data-style="navygrey">
-									</span>											
-									<span class="color-red" data-style="red">
-									</span>	
-								</span>
-								<span class="layout">
-									<label class="hidden-phone">
-									<input type="checkbox" class="header" checked value="" />Sticky Header
-									</label><br />
-									<label><input type="checkbox" class="metro" value="" />Metro Style</label>
-									<span class="space5"></span>
-									<a class="btn fancybox-button" data-rel="fancybox-button" title="Conquer Large Desktop Preview"  href="assets/img/demo/desktop.png"><i class="icon-eye-open"></i> Screenshots</a>
-									<a class="fancybox-button" data-rel="fancybox-button" title="Conquer Notebook Preview" href="assets/img/demo/notebook.png"></a>
-									<a class="fancybox-button" data-rel="fancybox-button" title="Conquer Tablet Preview"  href="assets/img/demo/tablet.png"></a>
-									<a class="fancybox-button" data-rel="fancybox-button" title="Conquer Phone Preview"  href="assets/img/demo/phone.png"></a>
-								</span>
-							</span>
-						</div>-->
-						<!-- END STYLE CUSTOMIZER-->    
-						<!-- BEGIN PAGE TITLE & BREADCRUMB-->		
-						<!--h3 class="page-title">
-							Reports
-							<small>All Customers</small>
-						</h3-->
+						
 						<ul class="breadcrumb">
 							<!--li>
 								<i class="icon-home"></i>
 								<a href="index.html">Home</a> <span class="divider">/</span>
 							</li>
-							<li><a href="#">Reports</a> </li-->	 <div class="row-fluid">
+							<li><a href="#">Configure Campaign</a></li-->	 <div class="row-fluid">
                      <div class="span12 responsive">
                      
                      <div class="span4 responsive">
@@ -273,86 +252,102 @@
 							<!-- BEGIN EXAMPLE TABLE PORTLET-->
 							<div class="widget">
 								<div class="widget-title">
-									<h4><i class="icon-bar-chart"></i>  Reports - All Customers</h4>
+									 <h4><i class="icon-inbox"></i> Inbox</h4>
 															
 								</div>
 								<div class="widget-body">
-                                <div class="row-fluid">
-                                <div class="span12">
-                                
-                                
-                                                            
-                               
-                                <!-- BEGIN FORM -->
-                              
-                               <form class="form-horizontal" action="#"><div class="control-group">
-                                 <label class="control-label"><strong>Default Date Ranges</strong></label>
-                                 <div class="controls">
-                                    <div class="input-prepend">
-                                       <span class="add-on"><i class="icon-calendar"></i></span><input type="text" class="input-large date-range" />
-                                    </div>
-                                 </div>
-                              </div>
-                              
-                               <div class="control-group">
-                              <label class="control-label"><strong>Select Campaigns</strong></label>
-                                 <div class="controls">
-                                    <label class="checkbox">
-                                    <input type="checkbox" class="group-checkable" data-set=".checkboxes" /> Select / Deselect All
-                                    </label>
-                                    <label class="checkbox">
-                                    <input type="checkbox" class="checkboxes" name="case" value="1" /> Application Install (Facebook Badge)
-                                    </label>
-                                    <label class="checkbox">
-                                    <input type="checkbox" class="checkboxes" name="case" value="1" /> Bonus Points
-                                    </label>
-                                    <label class="checkbox">
-                                    <input type="checkbox" class="checkboxes" name="case" value="1" /> Checkin (Facebook Badge)
-                                    </label>
-                                    <label class="checkbox">
-                                    <input type="checkbox" class="checkboxes" name="case" value="1" /> Qualified Leads
-                                    </label>
-                                    <label class="checkbox">
-                                    <input type="checkbox" class="checkboxes" name="case" value="1" /> Referral  (Facebook Badge)
-                                    </label>
-                                    <label class="checkbox">
-                                    <input type="checkbox" class="checkboxes" name="case" value="1" /> Referral 5 (Facebook Badge)
-                                    </label>
-                                    <label class="checkbox">
-                                    <input type="checkbox" class="checkboxes" name="case" value="1" /> Soft Leads
-                                    </label>
-                                 </div>
-                              </div>
-                              
-                            
-                              <div class="form-actions" style="padding-top:35px;">
-                                 <button type="button" class="btn btn-primary" onclick="window.location.href='all_customers_report.html'"><i class="icon-play"></i> Run Report</button>
-                                 <button type="button" class="btn btn-warning"><i class="icon-ban-circle"></i> Reset</button>
-                              </div>
-                              
-                              <!-- END FORM -->
 									
-                                            </div>
-                                    
-                                    </div>
-                                    
-                                    
-                                    
-								</div>
-                                
-                                
-                                
-							</div>
-							<!-- END EXAMPLE TABLE PORTLET-->
-                            
-                            
+     
+      <div class="row-fluid">
+        
+      <div class="span12">
+     <table class="table table-condensed table-hover">
+  <thead>
+    <tr>
+      <th class="span1"><input type="checkbox"></th>
+      <th class="span2">From</th>
+      <th class="span9">Subject</th>
+      <th class="span2">Expiration Date</th>
+      <th class="span2" align="right"><span class="pull-right">Priority</span></th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input type="checkbox"> </td>
+      <td><strong>John Doe</strong></td>
+      
+      <td><strong>Message body goes here</strong></td>
+      <td><strong>Sept 1</strong></td>
+      <td><span class="label label-important pull-right">Critical</span></td>
+    </tr>
+    <tr style="background-color:#eeeeee;">
+      <td><input type="checkbox"> </td>
+      <td>John Doe</td>
+      <td>Message body goes here</td>
+      <td>Sept 4</td>
+      <td><span class="label label-warning pull-right">Escalated</span></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox"> </td>
+      <td><strong>John Doe</strong></td>
+      <td><strong>Message body goes here</strong></td>
+      <td><strong>Sept 13</strong></td>
+      <td><span class="label label-success pull-right">Normal</span></td>
+    </tr>
+    <tr  style="background-color:#eeeeee;">
+      <td><input type="checkbox"> </td>
+      <td>John Doe</td>
+      <td>Message body goes here</td>
+      <td>Sept 13</td>
+      <td><span class="label label-success pull-right">Normal</span></td>
+    </tr>
+  </tbody>
+</table>
+
+ <div class="btn-group" style="margin-top:15px;">
+                                 <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"  style="width:100%;">Bulk Action <span class="caret"></span></button>
+                                 <ul class="dropdown-menu">
+                                    <li><a href=""><i class="icon-envelope"></i> Read</a></li>
+                                    <li><a href=""><i class="icon-envelope-alt"></i> Unread</a></li>
+                                    <li><a href="#myModal1" data-toggle="modal"><i class="icon-trash"></i> Delete</a></li>
                                    
                                     
-                            
-                            
+                                 </ul>
+                              </div>
+                              
+                              
+                               <div id="myModal1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+											<h3 id="myModalLabel2">Delete</h3>
+										</div>
+										<div class="modal-body scroller">
+											<p>You are about to delete these users.  Are you sure you want to continue?</p>
+
+
+										</div>
+										<div class="modal-footer">
+											<button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+											<button class="btn btn-primary">Continue</button>
+										</div>
+									</div>
+
+
+
+       </div>
+       
+       
+      
+      </div>
+                              </div>
+								</div>
+							</div>
+							<!-- END EXAMPLE TABLE PORTLET-->
 						</div>
 					</div>
-					
+                    
+                   
 				</div>
 				<!-- END PAGE CONTENT-->
 			</div>
@@ -369,17 +364,17 @@
 		</div>
 	</div>
 	<!-- END FOOTER -->
-	<!-- BEGIN JAVASCRIPTS -->		
-   <!-- Load javascripts at bottom, this will reduce page load time -->
-   <script src="assets/js/jquery-1.8.2.min.js"></script>		
-   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-   <script src="assets/js/jquery.blockui.js"></script>
-   <!-- ie8 fixes -->
-   <!--[if lt IE 9]>
-   <script src="assets/js/excanvas.js"></script>
-   <script src="assets/js/respond.js"></script>
-   <![endif]-->
-   <script type="text/javascript" src="assets/chosen-bootstrap/chosen/chosen.jquery.min.js"></script>
+	<!-- BEGIN JAVASCRIPTS -->
+	<!-- Load javascripts at bottom, this will reduce page load time -->
+	<script src="assets/js/jquery-1.8.2.min.js"></script>	
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.blockui.js"></script>
+	<!-- ie8 fixes -->
+	<!--[if lt IE 9]>
+	<script src="assets/js/excanvas.js"></script>
+	<script src="assets/js/respond.js"></script>
+	<![endif]-->	
+    <script type="text/javascript" src="assets/chosen-bootstrap/chosen/chosen.jquery.min.js"></script>
    <script type="text/javascript" src="assets/uniform/jquery.uniform.min.js"></script>
    <script type="text/javascript" src="assets/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>	
    <script type="text/javascript" src="assets/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
@@ -397,7 +392,6 @@
       	App.init();
       });
    </script>
-   <!-- END JAVASCRIPTS -->	
 </body>
 <!-- END BODY -->
 </html>
