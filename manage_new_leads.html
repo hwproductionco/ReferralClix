@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if IE 10]> <html lang="en" class="ie10"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+   <meta charset="utf-8" />
+   <title>ReferralClix | Campaigns</title>
+   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+   <meta content="" name="description" />
+   <meta content="" name="author" />
+   <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet" />
+   <link href="assets/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
+   <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+   <link href="assets/css/style.css" rel="stylesheet" />
+   <link href="assets/css/style_responsive.css" rel="stylesheet" />
+   <link href="assets/css/style_default.css" rel="stylesheet" id="style_color" />
+   <link href="#" rel="stylesheet" id="style_metro" />
+   <link href="assets/fancybox/source/jquery.fancybox.css" rel="stylesheet" />
+   <link rel="stylesheet" type="text/css" href="assets/gritter/css/jquery.gritter.css" />
+   <link rel="stylesheet" type="text/css" href="assets/uniform/css/uniform.default.css" />
+   <link rel="stylesheet" type="text/css" href="assets/chosen-bootstrap/chosen/chosen.css" />
+   <link rel="stylesheet" type="text/css" href="assets/bootstrap-wysihtml5/bootstrap-wysihtml5.css" />
+   <link rel="stylesheet" type="text/css" href="assets/bootstrap-datepicker/css/datepicker.css" />
+   <link rel="stylesheet" type="text/css" href="assets/bootstrap-timepicker/compiled/timepicker.css" />
+   <link rel="stylesheet" type="text/css" href="assets/bootstrap-colorpicker/css/colorpicker.css" />
+   <link rel="stylesheet" href="assets/bootstrap-toggle-buttons/static/stylesheets/bootstrap-toggle-buttons.css" />
+   <link rel="stylesheet" href="assets/data-tables/DT_bootstrap.css" />
+   <link rel="stylesheet" type="text/css" href="assets/bootstrap-daterangepicker/daterangepicker.css" />
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="fixed-top">
+   <!-- BEGIN HEADER -->
+   <div id="header" class="navbar navbar-inverse navbar-fixed-top">
+      <!-- BEGIN TOP NAVIGATION BAR -->
+      <div class="navbar-inner">
+         <div class="container-fluid">
+            <!-- BEGIN LOGO -->
+            <a class="brand" href="index.html">
+				ReferralClix
+				</a>
+            <!-- END LOGO -->
+            <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+            <a class="btn btn-navbar collapsed" id="main_menu_trigger" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="arrow"></span>
+            </a>          
+            <!-- END RESPONSIVE MENU TOGGLER -->            
+            <div class="top-nav">
+               
+               <!-- BEGIN TOP NAVIGATION MENU -->              
+               <ul class="nav pull-right" id="top_menu">
+                  <li class="divider-vertical hidden-phone hidden-tablet"></li>
+                  <!-- BEGIN USER LOGIN DROPDOWN -->
+                  <!-- <li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"  style="width:100%;">
+							<i class="icon-wrench"></i>
+							<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="account_settings.html"><i class="icon-wrench"></i> Account Info</a></li><li><a href="custom_fields.html"><i class="icon-cogs"></i> Custom Fields</a></li>
+								<li><a href="#"><i class="icon-pushpin"></i> Shortcuts</a></li>
+								<li><a href="#"><i class="icon-trash"></i> Trash</a></li>								
+							</ul>
+						</li> -->
+                  <!-- END USER LOGIN DROPDOWN -->
+                  <li class="divider-vertical hidden-phone hidden-tablet"></li>
+                  <!-- BEGIN USER LOGIN DROPDOWN -->
+<li><a href=""><i class="icon-inbox"></i> <span class="label label-success">5</span></a></li>
+<li class="divider-vertical hidden-phone hidden-tablet"></li>
+<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="icon-wrench"></i>
+							<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="configure_predictive_analytics.html"><i class="icon-magic"></i> Lead Scoring</a></li>
+								<!--li><a href="email_settings.html"><i class="icon-envelope-alt"></i> Email Settings</a></li-->
+<li><a href="form_manager.html"><i class="icon-edit"></i> Forms</a></li>
+							</ul>
+						</li>
+						<li class="divider-vertical hidden-phone hidden-tablet"></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"  style="width:100%;">
+							<i class="icon-user"></i>
+							<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="user_info.html"><i class="icon-user"></i> User Info</a></li>
+								<li><a href="account_settings.html"><i class="icon-wrench"></i> Account Info</a></li><li><a href="custom_fields.html"><i class="icon-cogs"></i> Custom Fields</a></li>
+								
+								<li class="divider"></li>
+								<li><a href="login.html"><i class="icon-key"></i> Log Out</a></li>
+							</ul>
+						</li>
+						</li>
+                  <!-- END USER LOGIN DROPDOWN -->
+               </ul>
+               <!-- END TOP NAVIGATION MENU --> 
+            </div>
+         </div>
+      </div>
+      <!-- END TOP NAVIGATION BAR -->
+   </div>
+   <!-- END HEADER -->
+   <!-- BEGIN CONTAINER -->
+   <div id="container" class="row-fluid">
+     
+        <!-- BEGIN SIDEBAR -->
+		<div id="sidebar" class="nav-collapse collapse">
+			<!-- BEGIN SIDEBAR MENU -->
+			<ul>
+				<li class="has-sub">
+					<a href="javascript:;" class="">
+					<i class="icon-dashboard"></i> Dashboard<span class="arrow"></span>
+					</a>	<ul class="sub"><li class=""><a href="index.html">Dashboard Home</a><li class=""><a href="regional_visits.html">Registration Visits</a></li><li><a href="site_visits.html">Survey Visits</a></li></ul>				
+				</li>				
+				</li>
+				<li class="has-sub active">
+					<a href="javascript:;" class="">
+					<i class="icon-group"></i> Leads
+					<span class="arrow"></span>
+					</a>
+					<ul class="sub">
+						
+                        <li class="active"><a class="active" href="view_all_new_leads.html">New Leads</a></li>
+						<li class=""><a class="" href="view_all_advocates.html">Advocates</a></li>
+                        <li><a href="view_all_participants.html">View All</a></li>
+                        <li><a class="" href="customer_search.html">Advanced Search</a></li>
+						<li><a class="" href="add_new_customer.html">Add User</a></li></ul>
+
+				</li>
+				
+				<li class="has-sub">
+					<a href="javascript:;" class="">
+					<i class="icon-book"></i> Campaigns
+					<span class="arrow"></span>
+					</a>
+                <ul class="sub"><li><a class="" href="view_all_programs.html">View All</a></li>
+                <li><a class="" href="add_new_campaign.html">Add New Campaign</a></li> 
+               </ul></li> <li class="has-sub">
+					<a href="javascript:;" class="">
+					<i class="icon-bar-chart"></i> Reports
+					<span class="arrow"></span>
+					</a>
+					<ul class="sub">
+						<li><a class="" href="all_transactions.html">All Transactions</li></a>
+						<li><a class="" href="redeemed_only.html">Audit: Redeemed Only</a></li>
+						<li><a class="" href="total_transactions.html">Audit: Total</a></li>
+						<li><a class="" href="all_customers.html">All Customers</a></li>
+						<li><a class="" href="new_customers.html">New Customers</a></li>
+						<li><a class="" href="frequent_customers.html">Frequent Customers</a></li>
+						<li><a class="" href="Inactive_customers.html">Inactive Advocates</a></li>
+						<li><a class="" href="birthday.html">Birthday</a></li>
+						<li><a class="" href="custom_date.html">Custom Date</a></li>
+						<li><a class="" href="customer_balance.html">Customer Balance</a></li><li><a class="" href="#">Videos Created</a></li><li><a class="" href="#">Videos Watched</a></li><li><a class="" href="#">Social Media Integrations</a></li></ul></li>
+                 <li class="has-sub"><a href="javascript:;" class="">
+					<i class="icon-sitemap"></i> Lead Site<span class="arrow"></span>
+					</a><ul class="sub">
+						<li><a href="lead_site_builder.html">Template Settings</li></a>
+						<li><a class="" href="lead_site_header_builder.html">Text Settings</a></li>
+</ul></li><li class="has-sub">
+					<a href="javascript:;" class="">
+					<i class="icon-tablet"></i> Apps
+					<span class="arrow"></span>
+					</a>
+					<ul class="sub">
+						<li><a class="" href="view_all_apps.html">View Apps</a></li><li><a class="" href="add_new_app.html">Create New App</a></li>
+</ul></li>
+				
+      <li class="has-sub">
+					<a href="" class="">
+					<i class="icon-info-sign"></i> Technical Support</a>
+					</li></ul>
+					</div>
+		<!-- END SIDEBAR -->
+      <!-- BEGIN PAGE -->  
+      <div id="body">
+         
+         <!-- BEGIN PAGE CONTAINER-->
+         <div class="container-fluid">
+            <!-- BEGIN PAGE HEADER-->   
+            <div class="row-fluid">
+               <div class="span12">
+                  <!-- BEGIN STYLE CUSTOMIZER-->
+                  <!-- <div id="styler" class="hidden-phone">
+							<a href="configure_points_program.html"><i class="icon-cog"></i></a>
+							<span class="settings">
+								<span class="text">Style:</span>
+								<span class="colors">
+									<span class="color-default" data-style="default">
+									</span>
+									<span class="color-grey" data-style="grey">
+									</span>
+									<span class="color-navygrey" data-style="navygrey">
+									</span>											
+									<span class="color-red" data-style="red">
+									</span>	
+								</span>
+								<span class="layout">
+									<label class="hidden-phone">
+									<input type="checkbox" class="header" checked value="" />Sticky Header
+									</label><br />
+									<label><input type="checkbox" class="metro" value="" />Metro Style</label>
+									<span class="space5"></span>
+									<a class="btn fancybox-button" data-rel="fancybox-button" title="Conquer Large Desktop Preview"  href="assets/img/demo/desktop.png"><i class="icon-eye-open"></i> Screenshots</a>
+									<a class="fancybox-button" data-rel="fancybox-button" title="Conquer Notebook Preview" href="assets/img/demo/notebook.png"></a>
+									<a class="fancybox-button" data-rel="fancybox-button" title="Conquer Tablet Preview"  href="assets/img/demo/tablet.png"></a>
+									<a class="fancybox-button" data-rel="fancybox-button" title="Conquer Phone Preview"  href="assets/img/demo/phone.png"></a>
+								</span>
+							</span>
+						</div>-->
+                  <!-- END STYLE CUSTOMIZER-->        
+                  <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+                  <!--h3 class="page-title">
+                     Campaigns
+                     <small>form controls, components, pickers and more</small>
+						</h3-->
+                  <ul class="breadcrumb">
+                     <!--li>
+								<i class="icon-home"></i>
+								<a href="index.html">Home</a> <span class="divider">/</span>
+							</li>
+                     <li class="responsive"><a href="#">Campaigns</a></li>	<br /><br />
+                     
+                       
+                    </ul>
+						<!-- END PAGE TITLE & BREADCRUMB-->
+               </div>
+            </div>
+            <!-- END PAGE HEADER-->
+            <!-- BEGIN PAGE CONTENT-->
+            <div id="page">
+            
+            
+            
+            <div class="row-fluid">
+            	<div class="span12">
+                	
+                    <div class="widget">
+                        <div class="widget-title">
+                           <h4><i class="icon-user"></i>  Customer Information</h4>
+                           <span class="tools">
+                           </span>							
+                        </div>
+                        <div class="widget-body">
+                        
+                        <div class="row-fluid">
+                        
+                        
+                        <div class="span3 alert" style="width:200px;"><span style="font-size:20px;" class="text-warning">Lead Score: 5</span></div>
+                        
+                        <div class="span5" style="text-align:center;">
+                        
+                        <div style="font-size:20px; margin-bottom:10px; margin-top:8px;"> <strong>John Doe</strong></div> 
+                        </div>
+                        
+                        <div class="span4"><button type="button" class="btn btn-primary" onclick="window.location.href='manage_customers_edit.html'">Edit Customer</button></div>
+                        
+                       
+                        
+                        
+                        </div>
+                        
+                        
+                        <div class="row-fluid" style="margin-top:25px;">
+                        	<div class="span12">
+                            
+                            <div class="span3 responsive">
+                            		<div style="padding-bottom:8px;"><strong>Phone Number:</strong><br />(123) 456-7890</div>
+                                    <div style="padding-bottom:8px;"><strong>Email Address:</strong><br /><a href="mailto:john@ReferralClix.com">john@ReferralClix.com</a></div>
+                                    <div style="padding-bottom:8px;"><strong>Birthday:</strong><br />1982-11-11</div>
+                                    <div style="padding-bottom:8px;"><strong>Address:</strong><br />1 Compliant Drive<br />Fantasy Island, IL 60750</div>
+                                    
+                                    
+                                    
+                            
+                            </div>
+                            
+                            <div class="span3 responsive">
+                            <div style="padding-bottom:8px;"><strong>Marital Status:</strong><br />Single</div>
+                           <div style="padding-bottom:8px;"><strong>Travel With Children:</strong><br />No</div>
+                           <div style="padding-bottom:8px;"><strong>Own a Timeshare:</strong><br />No</div>
+                           <div style="padding-bottom:8px;"><strong>Household Income:</strong><br />$100,000 - $149,000</div>
+                           <div style="padding-bottom:8px;"><strong>Referred By:</strong><br />rbenzing@gmail.com</div>
+                           
+                            
+                            </div>
+                            
+                            <div class="span3 responsive">
+                            <div style="padding-bottom:8px;"><strong>Credit Score:</strong><br />643</div>
+                            	<div style="padding-bottom:8px;"><strong>Public Records:</strong><br />1</div>
+                                <div style="padding-bottom:8px;"><strong>Revolving Trades:</strong><br />12</div>
+                                <div style="padding-bottom:8px;"><strong>Collections:</strong><br />2</div>
+                                <div style="padding-bottom:8px;"><strong>Installment Trades:</strong><br />6</div>
+                                
+                            
+                            </div>
+                            
+                            <div class="span3 responsive">
+                            <div style="padding-bottom:8px;"><strong>Tradelines:</strong><br />18</div>
+                            <div style="padding-bottom:8px;"><strong>Historic Neg. Occurences:</strong><br />5</div>
+                            
+                            </div>
+                            
+                        	
+                        </div>
+                        
+                        </div>
+                        
+                        </div>
+                
+                
+                </div>
+            
+            </div>
+            
+            
+            
+            
+               <div class="row-fluid">
+                  <div class="span12">
+                     <!-- BEGIN SAMPLE FORM PORTLET-->	
+                     <div class="widget">
+                        <div class="widget-title">
+                           <h4><i class="icon-user"></i>  Manage Customer Transactions</h4>
+                           <span class="tools">
+                           </span>							
+                        </div>
+                        <div class="widget-body">
+                        
+                        <div class="row-fluid">
+                            
+                                    <div class="span12 responsive" >
+                                   
+                                  <div class="tabbable tabbable-custom tabs-left">
+							  <ul class="nav nav-tabs tabs-left responsive">
+							    <li class="active"><a href="#tabs5-pane1" data-toggle="tab"><h4>300 Points</h4><i class="icon-money"></i>  Points Campaign</a></li>
+							    <li><a href="#tabs5-pane2" data-toggle="tab"><h4>$40.00</h4><i class="icon-credit-card"></i>  Gift Card</a></li>
+							    <li><a href="#tabs5-pane3" data-toggle="tab"><h4>1 Reward</h4><i class="icon-barcode"></i>  Buy 3 Get 1 Free</a></li>
+                                <li><a href="#tabs5-pane4" data-toggle="tab"><h4>$2.00</h4><i class="icon-barcode"></i>  Earn Per Event</a></li>
+                                <li><a href="#tabs5-pane5" data-toggle="tab"><h4>6</h4><i class="icon-barcode"></i>  Event Based Campaign</a></li>
+							  </ul>
+							  <div class="tab-content responsive" style="min-height:400px;">
+							    <div id="tabs5-pane1" class="tab-pane active" style="height:auto;">
+                              			<div class="row-fluid">
+                                            <div class="span6 responsive">
+                                            <h4 class="text-success">Add</h4>
+                                            
+                                             <form action="#" class="form-horizontal">
+                                             <table border="0" width="75%" style="margin-bottom:20px;">
+                                             	<tbody>
+                                                	<tr>
+                                                    	<td><strong style="padding-right:5px;">Amount Spent</strong></td>
+                                                        <td><div class="input-prepend input-append"><span class="add-on">$</span><input class="input-small responsive" id="input8" type="text"  style="width:110px;"/></td>
+                                                   </tr>
+                                                   <tr style="padding-top:3px;">
+                                                   		<td style="padding-top:8px;"><strong style="padding-right:5px; positon:relative; top:-10px;" >Campaign</strong></td>
+                                                        <td style="padding-top:8px;"><select data-placeholder="Choose One" class="input-medium chosen responsive" multiple tabindex="6" >
+                                       <option value=""></option>
+                                       <optgroup label="Your Campaigns">
+                                          <option>Campaign 1</option>
+                                          <option>Campaign 2</option>
+                                          <option>Campaign 3</option>
+                                          <option>Campaign 4</option>
+                                       </optgroup>
+                     
+                                    </select></td>
+                                    </tr>
+								<tr>
+                                		<td style="padding-top:8px;"><strong style="padding-right:5px;">Description</strong></td>
+                                        <td style="padding-top:8px;"><input type="text" id="input1" class="input-small responsive" style="width:138px;" /></td>
+                                </tr>
+								<tr>
+                                	<td style="padding-top:8px;"><strong style="padding-right:5px;">Custom Field</strong></td>
+                                    <td style="padding-top:8px;"> <input type="text" id="input1" class="input-small responsive" style="width:138px;"/></td>
+                                </tr>
+                                <tr>
+                                	<td style="padding-top:8px;"><strong style="padding-right:5px;">Send Email</strong></td>
+                                    <td style="padding-top:8px;"> <input type="checkbox"/> Yes</td>
+                                </tr>
+                              </tbody>
+                              </table>                              
+                                
+                                <div class="control-group">  
+                                <div class="controls">  
+                                    <button type="button" class="btn btn-success">Record Points</button>
+                                    </div>
+                                    </div>
+                                </form>
+                                            
+                                            </div>
+                                            
+                                            <div class="span6 responsive">
+                                            <h4 class="text-error">Redeem</h4>
+                                            <form action="#" class="form-horizontal">
+                                    <table border="0" width="75%" style="margin-bottom:20px;">
+                                    	<tbody>
+                                         <tr>
+                                    	<td style="padding-top:8px;"><strong style="padding-right: 5px;">Amount</strong></td>
+                                        <td style="padding-top:8px;"><input type="text" id="input1" class="input-small" style="width:138px;"/></td>
+                                    </tr>
+                                        	<tr>
+                                            	<td valign="top"><strong style="padding-right:5px;">Choose Reward</strong></td>
+                                                <td><label class="radio">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked />
+                                    Reward 1
+                                    </label>
+                                    <div class="clearfix"></div>
+                                    <label class="radio">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" />
+                                    Reward 2
+                                    </label>  
+                                    <div class="clearfix"></div>
+                                    <label class="radio">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option2" />
+                                    Reward 3
+                                    </label>  
+                                    <div class="clearfix"></div>
+                                    <label class="radio">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option2" />
+                                    Reward 4
+                                    </label>  
+                                    </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                    	<td style="padding-top:8px;"><strong style="padding-right: 5px;">Description</strong></td>
+                                        <td style="padding-top:8px;"><input type="text" id="input1" class="input-small" style="width:138px;"/></td>
+                                    </tr>
+                                    </tbody>
+                                    </table>    
+                                
+                                <div class="control-group">  
+                                <div class="controls">  
+                                    <button type="button" class="btn btn-danger">Redeem</button>
+                                    </div>
+                                    </div>
+									</form>
+                                            
+                                            
+                                            </div>
+                                            
+                                            
+                                        
+                                        
+                                        </div>
+                              		
+							
+                                  
+							    </div>
+							    <div id="tabs5-pane2" class="tab-pane">
+                              			<div class="row-fluid">
+                                            <div class="span12 responsive">
+                                            <h4 class="text-success">Gift Card Activity</h4>
+                                            
+                                             <form action="#" class="form-horizontal">
+                                             <table border="0" width="75%" style="margin-bottom:20px;">
+                                             	<tbody>
+                                                	<tr>
+                                                    	<td style="padding-bottom:10px;"><strong style="padding-right:5px;">Amount</strong></td>
+                                                        <td style="padding-bottom:10px;"><div class="input-prepend input-append"><span class="add-on">$</span><input class="input-small responsive" id="input8" type="text"  style="width:110px;"/></td>
+                                                   </tr>
+                                 
+                                 <tr style="padding-bottom:10px;">
+                                                	<td style="padding-bottom:10px;"><strong style="padding-right:5px;">Type of Activity</strong></td>
+                                                    <td style="padding-bottom:10px;"><select class="input-medium responsive" data-placeholder="" tabindex="1">
+                                       <option value=""></option>
+                                       <option value="Add">Add</option>
+                                       <option value="Deduct">Deduct</option>
+                                       
+                                    </select>
+                                    </td>
+                                                
+                                                </tr>
+                                
+                                
+								<tr>
+                                	<td style="padding-top:8px;"><strong style="padding-right:5px;">Authorization</strong></td>
+                                    <td style="padding-top:8px;"> <input type="text" id="input1" class="input-small responsive" style="width:138px;"/></td>
+                                </tr>
+                                
+                                <tr>
+                                	<td style="padding-top:8px;"><strong style="padding-right:5px;">Send Email</strong></td>
+                                    <td style="padding-top:8px;">  <label class="checkbox line">
+                                          <input type="checkbox" value="" /> Yes
+                                          </label></td>
+                                </tr>
+                                
+                                <tr>
+                                	<td style="padding-top:8px;">&nbsp;</td>
+                                	<td style="padding-top:8px;"><button type="button" class="btn btn-success">Record Activity</button></td>
+                                </tr>
+                                
+                              </tbody>
+                              </table>                              
+                                
+                             
+                                </form>
+                                            
+                             </div>
+                                            
+                                            
+                                        
+                                        
+                                        </div>
+                              		
+                                        
+									
+
+
+
+
+							    </div>
+							    <div id="tabs5-pane3" class="tab-pane">
+									
+                                    <div class="row-fluid">
+                                    
+                                    	
+                                        
+                                        <div class="span6" style="min-height:250px;"><h4 class="text-success">New Activity</h4>
+                                        
+                                        
+                                        <form action="#" class="form-horizontal">
+                                             <table border="0" width="75%" style="margin-bottom:20px;">
+                                             	<tbody>
+                                                
+                                                <tr style="padding-bottom:10px;">
+                                                	<td style="padding-bottom:10px;"><strong style="padding-right:5px;">Product or Service</strong></td>
+                                                    <td style="padding-bottom:10px;"><select class="input-medium responsive" data-placeholder="Choose a Category" tabindex="1">
+                                       <option value=""></option>
+                                       <option value="Category 1">Category 1</option>
+                                       <option value="Category 2">Category 2</option>
+                                       <option value="Category 3">Category 5</option>
+                                       <option value="Category 4">Category 4</option>
+                                    </select>
+                                    </td>
+                                                
+                                                </tr>
+                                                
+                                                	<tr>
+                                                    	<td><strong style="padding-right:5px;">Quantity to Add</strong></td>
+                                                        <td><div class=""><input class="input-medium responsive" id="input8" type="text"  /></td>
+                                                   </tr>
+                                
+								<tr>
+                                	<td style="padding-top:8px;"><strong style="padding-right:5px;">Description</strong></td>
+                                    <td style="padding-top:8px;"> <input type="text" id="input1" class="input-medium responsive" /></td>
+                                </tr>
+                                <tr>
+                                	<td style="padding-top:8px;"><strong style="padding-right:5px;">Send Email</strong></td>
+                                    <td style="padding-top:8px;">  <label class="checkbox line">
+                                          <input type="checkbox" value="" /> Yes
+                                          </label></td>
+                                </tr>
+                              </tbody>
+                              </table>                              
+                                
+                                <div class="control-group">  
+                                <div class="controls">  
+                                    <button type="button" class="btn btn-success">Record Activity</button>
+                                    </div>
+                                    </div>
+                                </form>
+                                        
+                                        
+                                        
+                                        </div>
+                                        
+                                        <div class="span6" style="min-height:250px;"><h4 class="text-error">Rewards Table</h4>
+                                        
+                                        <p>Customer has accumulated enough activity for:</p>
+                                        
+                                        
+                                        <form action="#" class="form-horizontal">
+                                    <table border="0" width="75%" style="margin-bottom:20px;">
+                                    	<tbody>
+                                        	<tr>
+                                            	<td valign="top"><strong style="padding-right:5px;">Choose Reward</strong></td>
+                                                <td><label class="radio">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked />
+                                    Reward 1 (needs x)
+                                    </label>
+                                    <div class="clearfix"></div>
+                                    <label class="radio">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" />
+                                    Reward 2 (needs x)
+                                    </label>  
+                                    <div class="clearfix"></div>
+                                    <label class="radio">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option2" />
+                                    Reward 3 (needs x)
+                                    </label>  
+                                    <div class="clearfix"></div>
+                                    <label class="radio">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option2" />
+                                    Reward 4 (needs x)
+                                    </label>  
+                                    </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                    	<td style="padding-top:8px;"><strong style="padding-right: 5px;">Description</strong></td>
+                                        <td style="padding-top:8px;"><input type="text" id="input1" class="input-small" style="width:138px;"/></td>
+                                    </tr>
+                                    </tbody>
+                                    </table>    
+                                
+                                <div class="control-group">  
+                                <div class="controls">  
+                                    <button type="button" class="btn btn-danger">Redeem</button>
+                                    </div>
+                                    </div>
+									</form>
+                                        
+                                        </div>
+                                    
+                                    
+                                    
+                                    </div>
+
+
+
+
+
+							    </div>
+                                
+                                <div id="tabs5-pane4" class="tab-pane">
+                                
+                                <div class="row-fluid">
+                                            <div class="span6 responsive">
+                                            <h4 class="text-success">Add</h4>
+                                            
+                                             <form action="#" class="form-horizontal">
+                                             <table border="0" width="75%" style="margin-bottom:20px;">
+                                             	<tbody>
+                                                	
+                                
+								<tr>
+                                	<td style="padding-top:8px;"><strong style="padding-right:5px;">Description</strong><br />(optional)</td>
+                                    <td style="padding-top:8px;"> <input type="text" id="input1" class="input-small responsive" style="width:138px;"/></td>
+                                </tr>
+                                <tr>
+                                	<td style="padding-top:8px;"><strong style="padding-right:5px;">Send Email</strong></td>
+                                    <td style="padding-top:8px;">  <label class="checkbox line">
+                                          <input type="checkbox" value="" /> Yes
+                                          </label></td>
+                                </tr>
+                              </tbody>
+                              </table>                              
+                                
+                                <div class="control-group">  
+                                <div class="controls">  
+                                    <button type="button" class="btn btn-success">Record Activity</button>
+                                    </div>
+                                    </div>
+                                </form>
+                                            
+                                            </div>
+                                            
+                                            <div class="span6 responsive">
+                                            <h4 class="text-error">Deduct</h4>
+                                            <form action="#" class="form-horizontal">
+                                   <table border="0" width="75%" style="margin-bottom:20px;">
+                                             	<tbody>
+                                                	<tr>
+                                                    	<td><strong style="padding-right:5px;">Deduct</strong></td>
+                                                        <td><div class="input-prepend input-append"><span class="add-on">$</span><input class="input-small responsive" id="input8" type="text"  style="width:110px;"/></td>
+                                                   </tr>
+                                
+								<tr>
+                                	<td style="padding-top:8px;"><strong style="padding-right:5px;">Description</strong><br />(optional)</td>
+                                    <td style="padding-top:8px;"> <input type="text" id="input1" class="input-small responsive" style="width:138px;"/></td>
+                                </tr>
+                              </tbody>
+                              </table>                          
+                                
+                                <div class="control-group">  
+                                <div class="controls">  
+                                    <button type="button" class="btn btn-danger">Deduct</button>
+                                    </div>
+                                    </div>
+									</form>
+                                            
+                                            
+                                            </div>
+                                            
+                                            
+                                        
+                                        
+                                        </div>
+                              		
+                                
+                                
+                                </div>
+                                
+                                <div id="tabs5-pane5" class="tab-pane">
+                                
+                                <div class="row-fluid">
+                                    
+                                    	
+                                        
+                                        <div class="span6" style="min-height:250px;"><h4 class="text-success">New Activity</h4>
+                                        
+                                        
+                                        <form action="#" class="form-horizontal">
+                                             <table border="0" width="75%" style="margin-bottom:20px;">
+                                             	<tbody>
+                                                
+                                                
+								<tr>
+                                	<td style="padding-top:8px;"><strong style="padding-right:5px;">Description</strong><br />(optional)</td>
+                                    <td style="padding-top:8px;"> <input type="text" id="input1" class="input-medium responsive" /></td>
+                                </tr>
+                                <tr>
+                                	<td style="padding-top:8px;"><strong style="padding-right:5px;">Send Email</strong></td>
+                                    <td style="padding-top:8px;"> <label class="checkbox line">
+                                          <input type="checkbox" value="" /> Yes
+                                          </label></td>
+                                </tr>
+                              </tbody>
+                              </table>                              
+                                
+                                <div class="control-group">  
+                                <div class="controls">  
+                                    <button type="button" class="btn btn-success">Record Activity</button>
+                                    </div>
+                                    </div>
+                                </form>
+                                        
+                                        
+                                        
+                                        </div>
+                                        
+                                        <div class="span6" style="min-height:250px;"><h4 class="text-error">Rewards Available</h4>
+                                        
+                                        
+                                        
+                                        <form action="#" class="form-horizontal">
+                                    <table border="0" width="75%" style="margin-bottom:20px;">
+                                    	<tbody>
+                                        <tr>
+                                        
+                                        	<td><strong>Need</strong></td>
+                                            <td><strong>To Get</strong></td>
+                                        
+                                        </tr>
+                                        	<tr>
+                                            	
+                                                <td><label class="radio">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked />
+                                    Level 1
+                                    </label>
+                                    
+                                    </td>
+                                    <td valign="top">Reward 1</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                    	
+                                        <td><label class="radio">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option2" checked />
+                                    Level 2
+                                    </label></td>
+                                        <td>Reward 2</td>
+                                    
+                                    </tr>
+                                    
+                                    
+                                    <tr>
+                                    	<td style="padding-top:8px;"><strong style="padding-right: 5px;">Description</strong><br />(optional)</td>
+                                        <td style="padding-top:8px;"><input type="text" id="input1" class="input-small" style="width:138px;"/></td>
+                                    </tr>
+                                    </tbody>
+                                    </table>    
+                                
+                                <div class="control-group">  
+                                <div class="controls">  
+                                    <button type="button" class="btn btn-danger">Redeem</button>
+                                    </div>
+                                    </div>
+									</form>
+                                        
+                                        </div>
+                                
+                                
+                                </div>
+							    
+							  </div><!-- /.tab-content -->
+							</div><!-- /.tabbable -->
+                                   </div>
+                                   
+                                   
+                                   <!--div class="span3">
+                                   <h4>Customer Information</h4>
+                                   
+                                   <table border="0" width="100%">
+                                   <tbody>
+                                   	<tr>
+                                    	<td><img src="assets/img/default_avatar.png" style="width:115px;" />
+										</td>	
+                                    
+                                    </tr>
+                                    
+                                    <tr>
+                                    	<td><button type="button" class="btn btn-primary" onclick="window.location.href='manage_customers_edit.html'">Edit Customer</button></td>
+                                    </tr>
+                                   
+                                   
+                                   </tbody>
+                                   </table>
+                                   
+                                   
+                                </div-->
+                                
+                                
+                      
+                                    
+                                    <div class="row-fluid">
+                                    <div class="span12">
+                                    <br /><h4>Customer Activity</h4>
+                                     <table class="table table-bordered table-hover" id="cust_trans">
+										<thead>
+											<tr>
+												<th style="width:8px"><input type="checkbox" class="group-checkable" data-set=".checkboxes" /></th>
+                                                <th>Campaign Name</th>
+												<th>Date</th>
+												<th>Activity</th>
+												<th class="hidden-phone">Transaction</th>
+												<th>Description</th>
+                                                <th class="hidden-phone">Recorded By</th>
+                                                <th class="hidden-phone">Trans ID</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><input type="checkbox" class="checkboxes" name="case" value="1" /></td>
+                                                <td>Bonus Points</td>
+												<td>2012-12-15</td>
+												<td>Points</td>
+												<td class="hidden-phone">-</td>
+												<td>Account Activated</td>
+                                                <td class="hidden-phone">resort</td>
+                                                <td class="hidden-phone">2291</td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" class="checkboxes" name="case" value="1" /></td>
+                                                <td>Bonus Points</td>
+												<td>2012-12-30</td>
+												<td>Points</td>
+												<td class="hidden-phone">-</td>
+												<td>Refer A Friend - rbenzig@benzingtech.com</td>
+                                                <td class="hidden-phone">resort</td>
+                                                <td class="hidden-phone">2233</td>
+											</tr>
+                                            </tbody>
+                                            </table>
+                                            
+                                             <div class="btn-group" style="margin-top:15px;">
+                                 <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"  style="width:100%;">Action <span class="caret"></span></button>
+                                 <ul class="dropdown-menu">
+                                    <li><a href="#"><i class="icon-trash"></i> Delete</a></li>
+                                   
+                                    
+                                 </ul>
+                              </div>
+                                            
+                                            
+                                            </div>
+                                    
+                                    </div>
+                                    
+                                    
+                                    
+								</div>
+                                
+                                
+                                
+							</div>
+							<!-- END EXAMPLE TABLE PORTLET-->
+                            
+                            
+                                   
+                                    
+                            
+                            
+						</div>
+					</div>
+					
+				</div>
+            <!-- END PAGE CONTENT-->			
+         </div>
+         <!-- END PAGE CONTAINER-->
+      </div>
+      <!-- END PAGE -->  
+   </div>
+   <!-- END CONTAINER -->
+   <!-- BEGIN FOOTER -->
+   <div id="footer">
+      
+      <!--div class="span pull-right">
+         <span class="go-top"><i class="icon-arrow-up"></i></span>
+      </div-->
+   </div>
+   <!-- END FOOTER -->
+   <!-- BEGIN JAVASCRIPTS -->		
+   <!-- Load javascripts at bottom, this will reduce page load time -->
+   <script src="assets/js/jquery-1.8.2.min.js"></script>		
+   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+   <script src="assets/js/jquery.blockui.js"></script>
+   <!-- ie8 fixes -->
+   <!--[if lt IE 9]>
+   <script src="assets/js/excanvas.js"></script>
+   <script src="assets/js/respond.js"></script>
+   <![endif]-->
+   <script type="text/javascript" src="assets/chosen-bootstrap/chosen/chosen.jquery.min.js"></script>
+   <script type="text/javascript" src="assets/uniform/jquery.uniform.min.js"></script>
+   <script type="text/javascript" src="assets/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>	
+   <script type="text/javascript" src="assets/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
+   <script type="text/javascript" src="assets/bootstrap-toggle-buttons/static/js/jquery.toggle.buttons.js"></script>
+   <script type="text/javascript" src="assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+   <script type="text/javascript" src="assets/bootstrap-daterangepicker/date.js"></script>
+   <script type="text/javascript" src="assets/bootstrap-daterangepicker/daterangepicker.js"></script>	
+   <script type="text/javascript" src="assets/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>	
+   <script type="text/javascript" src="assets/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+   <script src="assets/fancybox/source/jquery.fancybox.pack.js"></script>
+   <script src="assets/js/app.js"></script>		
+   <script>
+      jQuery(document).ready(function() {			
+      	// initiate layout and plugins
+      	App.init();
+      });
+   </script>
+   <!-- END JAVASCRIPTS -->	
+</body>
+<!-- END BODY -->
+</html>

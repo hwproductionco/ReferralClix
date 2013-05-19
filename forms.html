@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if IE 10]> <html lang="en" class="ie10"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+   <meta charset="utf-8" />
+   <title>ReferralClix | Campaigns</title>
+   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+   <meta content="" name="description" />
+   <meta content="" name="author" />
+   <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet" />
+   <link href="assets/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
+   <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+   <link href="assets/css/style.css" rel="stylesheet" />
+   <link href="assets/css/style_responsive.css" rel="stylesheet" />
+   <link href="assets/css/style_default.css" rel="stylesheet" id="style_color" />
+   <link href="#" rel="stylesheet" id="style_metro" />
+   <link href="assets/fancybox/source/jquery.fancybox.css" rel="stylesheet" />
+   <link rel="stylesheet" type="text/css" href="assets/gritter/css/jquery.gritter.css" />
+   <link rel="stylesheet" type="text/css" href="assets/uniform/css/uniform.default.css" />
+   <link rel="stylesheet" type="text/css" href="assets/chosen-bootstrap/chosen/chosen.css" />
+   <link rel="stylesheet" type="text/css" href="assets/bootstrap-wysihtml5/bootstrap-wysihtml5.css" />
+   <link rel="stylesheet" type="text/css" href="assets/bootstrap-datepicker/css/datepicker.css" />
+   <link rel="stylesheet" type="text/css" href="assets/bootstrap-timepicker/compiled/timepicker.css" />
+   <link rel="stylesheet" type="text/css" href="assets/bootstrap-colorpicker/css/colorpicker.css" />
+   <link rel="stylesheet" href="assets/bootstrap-toggle-buttons/static/stylesheets/bootstrap-toggle-buttons.css" />
+   <link rel="stylesheet" href="assets/data-tables/DT_bootstrap.css" />
+   <link rel="stylesheet" type="text/css" href="assets/bootstrap-daterangepicker/daterangepicker.css" />
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="fixed-top">
+   <!-- BEGIN HEADER -->
+   <div id="header" class="navbar navbar-inverse navbar-fixed-top">
+      <!-- BEGIN TOP NAVIGATION BAR -->
+      <div class="navbar-inner">
+         <div class="container-fluid">
+            <!-- BEGIN LOGO -->
+            <a class="brand" href="index.html">
+				ReferralClix
+				</a>
+            <!-- END LOGO -->
+            <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+            <a class="btn btn-navbar collapsed" id="main_menu_trigger" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="arrow"></span>
+            </a>          
+            <!-- END RESPONSIVE MENU TOGGLER -->            
+            <div class="top-nav">
+               
+               <!-- BEGIN TOP NAVIGATION MENU -->              
+               <ul class="nav pull-right" id="top_menu">
+                  <li class="divider-vertical hidden-phone hidden-tablet"></li>
+                  <!-- BEGIN USER LOGIN DROPDOWN -->
+                  <!-- <li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"  style="width:100%;">
+							<i class="icon-wrench"></i>
+							<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="account_settings.html"><i class="icon-wrench"></i> Account Info</a></li><li><a href="custom_fields.html"><i class="icon-cogs"></i> Custom Fields</a></li>
+								<li><a href="#"><i class="icon-pushpin"></i> Shortcuts</a></li>
+								<li><a href="#"><i class="icon-trash"></i> Trash</a></li>								
+							</ul>
+						</li> -->
+                  <!-- END USER LOGIN DROPDOWN -->
+                  <li class="divider-vertical hidden-phone hidden-tablet"></li>
+                  <!-- BEGIN USER LOGIN DROPDOWN -->
+<li><a href=""><i class="icon-inbox"></i> <span class="label label-success">5</span></a></li>
+<li class="divider-vertical hidden-phone hidden-tablet"></li>
+<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="icon-wrench"></i>
+							<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="configure_predictive_analytics.html"><i class="icon-magic"></i> Lead Scoring</a></li>
+								<!--li><a href="email_settings.html"><i class="icon-envelope-alt"></i> Email Settings</a></li-->
+<li><a href="form_manager.html"><i class="icon-edit"></i> Forms</a></li>
+							</ul>
+						</li>
+						<li class="divider-vertical hidden-phone hidden-tablet"></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"  style="width:100%;">
+							<i class="icon-user"></i>
+							<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="user_info.html"><i class="icon-user"></i> User Info</a></li>
+								<li><a href="account_settings.html"><i class="icon-wrench"></i> Account Info</a></li><li><a href="custom_fields.html"><i class="icon-cogs"></i> Custom Fields</a></li>
+								
+								<li class="divider"></li>
+								<li><a href="login.html"><i class="icon-key"></i> Log Out</a></li>
+							</ul>
+						</li>
+						</li>
+                  <!-- END USER LOGIN DROPDOWN -->
+               </ul>
+               <!-- END TOP NAVIGATION MENU --> 
+            </div>
+         </div>
+      </div>
+      <!-- END TOP NAVIGATION BAR -->
+   </div>
+   <!-- END HEADER -->
+   <!-- BEGIN CONTAINER -->
+   <div id="container" class="row-fluid">
+      <!-- BEGIN SIDEBAR -->
+      <div id="sidebar" class="nav-collapse collapse">
+         <!-- BEGIN SIDEBAR MENU -->
+         <ul>
+            <li class="has-sub">
+					<a href="javascript:;" class="">
+					<i class="icon-dashboard"></i> Dashboard<span class="arrow"></span>
+					</a>	<ul class="sub"><li class=""><a href="index.html">Dashboard Home</a><li class=""><a href="regional_visits.html">Registration Visits</a></li><li><a href="site_visits.html">Survey Visits</a></li></ul>				
+				</li>				
+				</li>
+            <li class="has-sub">
+					<a href="javascript:;" class="">
+					<i class="icon-group"></i> Leads
+					<span class="arrow"></span>
+					</a>
+					<ul class="sub">
+						
+                        <li><a class="" href="view_all_soft_leads.html">Soft Leads</a></li>
+                        <li><a class="" href="view_all_qualified_leads.html">Qualified Leads</a></li>
+						<!--li><a class="" href="view_all_advocates.html">Advocates</a></li--><!--li><a class="" href="view_all_participants.html">View All</a></li--><li><a class="" href="add_new_customer.html">Add Lead</a></li>
+						<li><a href="view_all_new_leads.html">Soft or Qualified</a></li>
+						<li><a class="" href="customer_search.html">Advanced Search</a></li>
+						<li></ul>
+
+				</li>
+
+				<li class="has-sub">
+					<a href="javascript:;" class="">
+					<i class="icon-briefcase"></i> Advocates
+					<span class="arrow"></span>
+					</a>
+					<ul class="sub">
+						<li><a class="" href="view_all_advocates.html">View Advocates</a></li>
+						<li><a class="" href="add_new_customer.html">Add Advocate</a></li>
+						<li><a class="" href="customer_search.html">Advanced Search</a></li>
+                        
+                    </ul>
+                </li>
+				
+            <li class="active"><a class="" href="forms.html"><i class="icon-folder-open-alt"></i> Campaigns</a></li>
+            <li class="has-sub">
+					<a href="javascript:;" class="">
+					<i class="icon-book"></i> Campaigns
+					<span class="arrow"></span>
+					</a>
+                <ul class="sub"><li><a class="" href="view_all_programs.html">View All</a></li>
+                <li><a class="" href="add_new_campaign.html">Add New Campaign</a></li> 
+               </ul></li> <li class="has-sub">
+					<a href="javascript:;" class="">
+					<i class="icon-bar-chart"></i> Reports
+					<span class="arrow"></span>
+					</a>
+					<ul class="sub">
+						<li><a class="" href="all_transactions.html">All Transactions</li></a>
+						<li><a class="" href="redeemed_only.html">Audit: Redeemed Only</a></li>
+						<li><a class="" href="total_transactions.html">Audit: Total</a></li>
+						<li><a class="" href="all_customers.html">All Customers</a></li>
+						<li><a class="" href="new_customers.html">New Customers</a></li>
+						<li><a class="" href="frequent_customers.html">Frequent Customers</a></li>
+						<li><a class="" href="Inactive_customers.html">Inactive Advocates</a></li>
+						<li><a class="" href="birthday.html">Birthday</a></li>
+						<li><a class="" href="custom_date.html">Custom Date</a></li>
+						<li><a class="" href="customer_balance.html">Customer Balance</a></li><li><a class="" href="#">Videos Created</a></li><li><a class="" href="#">Videos Watched</a></li><li><a class="" href="#">Social Media Integrations</a></li></ul></li>
+                 <li class="has-sub"><a href="javascript:;" class="">
+					<i class="icon-sitemap"></i> Lead Site<span class="arrow"></span>
+					</a><ul class="sub">
+						<li><a href="lead_site_builder.html">Template Settings</li></a>
+						<li><a class="" href="lead_site_header_builder.html">Text Settings</a></li>
+</ul></li><li class="has-sub">
+					<a href="javascript:;" class="">
+					<i class="icon-tablet"></i> Apps
+					<span class="arrow"></span>
+					</a>
+					<ul class="sub">
+						<li><a class="" href="view_all_apps.html">View Apps</a></li><li><a class="" href="add_new_app.html">Create New App</a></li>
+</ul></li>
+				<!-- END SIDEBAR MENU -->
+      <li class="has-sub">
+					<a href="" class="">
+					<i class="icon-info-sign"></i> Technical Support</a>
+					</li>
+					</div>
+		<!-- END SIDEBAR -->
+      <!-- BEGIN PAGE -->  
+      <div id="body">
+         
+         <!-- BEGIN PAGE CONTAINER-->
+         <div class="container-fluid">
+            <!-- BEGIN PAGE HEADER-->   
+            <div class="row-fluid">
+               <div class="span12">
+                  <!-- BEGIN STYLE CUSTOMIZER-->
+                  <!-- <div id="styler" class="hidden-phone">
+							<a href="configure_points_program.html"><i class="icon-cog"></i></a>
+							<span class="settings">
+								<span class="text">Style:</span>
+								<span class="colors">
+									<span class="color-default" data-style="default">
+									</span>
+									<span class="color-grey" data-style="grey">
+									</span>
+									<span class="color-navygrey" data-style="navygrey">
+									</span>											
+									<span class="color-red" data-style="red">
+									</span>	
+								</span>
+								<span class="layout">
+									<label class="hidden-phone">
+									<input type="checkbox" class="header" checked value="" />Sticky Header
+									</label><br />
+									<label><input type="checkbox" class="metro" value="" />Metro Style</label>
+									<span class="space5"></span>
+									<a class="btn fancybox-button" data-rel="fancybox-button" title="Conquer Large Desktop Preview"  href="assets/img/demo/desktop.png"><i class="icon-eye-open"></i> Screenshots</a>
+									<a class="fancybox-button" data-rel="fancybox-button" title="Conquer Notebook Preview" href="assets/img/demo/notebook.png"></a>
+									<a class="fancybox-button" data-rel="fancybox-button" title="Conquer Tablet Preview"  href="assets/img/demo/tablet.png"></a>
+									<a class="fancybox-button" data-rel="fancybox-button" title="Conquer Phone Preview"  href="assets/img/demo/phone.png"></a>
+								</span>
+							</span>
+						</div>-->
+                  <!-- END STYLE CUSTOMIZER-->        
+                  <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+                  <!--h3 class="page-title">
+                     Campaigns
+                     <small>form controls, components, pickers and more</small>
+						</h3-->
+                  <ul class="breadcrumb">
+                     <!--li>
+								<i class="icon-home"></i>
+								<a href="index.html">Home</a> <span class="divider">/</span>
+							</li>
+                     <li><a href="#">Campaigns</a></li-->	 <div class="row-fluid">
+                     <div class="span12 responsive">
+                     
+                     <div class="span4 responsive">
+                     	<div><strong>Account Name:</strong><br />RCI</div>
+                        <div><strong>Account ID:</strong><br />RCI</div>
+                     </div>
+                     
+                     <div class="span4 responsive">
+                     	<div><strong>Support Phone Number:</strong><br />(555) 444-8877</div>
+                        <div><strong>Support Email:</strong><br /><a href="mailto:support@ReferralClix.com">support@ReferralClix.com</a></div>
+                     </div>
+                      
+                      <div class="span4 responsive" style="text-align: right;">
+                      		<img src="assets/img/RCI_logo.jpg" border="0" style="max-width:125px;" />
+                      </div>
+                      
+                    </div>
+                    
+                  </div>        </ul>
+						<!-- END PAGE TITLE & BREADCRUMB-->
+               </div>
+            </div>
+            <!-- END PAGE HEADER-->
+            <!-- BEGIN PAGE CONTENT-->
+            <div id="page">
+               <div class="row-fluid">
+                  <div class="span12">
+                     <!-- BEGIN SAMPLE FORM PORTLET-->	
+                     <div class="widget">
+                        <div class="widget-title">
+                           <h4><i class="icon-reorder"></i>Sample Form</h4>
+                           <span class="tools">
+                           		
+                           <a href="javascript:;" class="icon-remove"></a>
+                           </span>							
+                        </div>
+                        <div class="widget-body form">
+                           <!-- BEGIN FORM-->
+                           <form action="#" class="form-horizontal">
+                              <div class="control-group">
+                                 <label class="control-label" for="input1">Input</label>
+                                 <div class="controls">
+                                    <input type="text" class="span6" id="input1" />
+                                    <span class="help-inline">Some hint here</span>
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label" for="input2">Disabled Input</label>
+                                 <div class="controls">
+                                    <input class="span6" id="input2" type="text" placeholder="Disabled input here..." disabled />
+                                    <span class="help-inline">Some hint here</span>
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label" for="input3">Input with Popover</label>
+                                 <div class="controls">
+                                    <input type="text" class="span6 popovers" id="input3" data-trigger="hover" data-content="Popover body goes here. Popover body goes here." data-original-title="Popover header" />
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label" for="input4">Input with Tooltip</label>
+                                 <div class="controls">
+                                    <input type="text" class="span6 tooltips" id="input4"  data-trigger="hover" data-original-title="Tooltip text goes here. Tooltip text goes here." />					 	 		
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label" for="input5">Auto Complete</label>
+                                 <div class="controls">
+                                    <input type="text" id="input5" class="span6" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Connecticut&quot;,&quot;Delaware&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]" />
+                                    <p class="help-block">Start typing to auto complete!. E.g: California</p>
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label" for="input6">Phone Number Input</label>
+                                 <div class="controls">
+                                    <input type="text" class="span6" id="input6" />
+                                    <span class="help-block">Some hint here</span>
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label" for="input7">Email Address Input</label>
+                                 <div class="controls">WYSIWYG Editor
+                                    <div class="input-prepend">
+                                       <span class="add-on">@</span><input class="input-medium" id="input7" type="text" placeholder="Email Address" />			 
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label" for="input8">Currency Input</label>
+                                 <div class="controls">
+                                    <div class="input-prepend input-append">
+                                       <span class="add-on">$</span><input class="input-small" id="input8" type="text" /><span class="add-on">.00</span>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label" >Default Dropdown</label>
+                                 <div class="controls">
+                                    <select class="span6" data-placeholder="Choose a Category" tabindex="1">
+                                       <option value=""></option>
+                                       <option value="Category 1">Category 1</option>
+                                       <option value="Category 2">Category 2</option>
+                                       <option value="Category 3">Category 5</option>
+                                       <option value="Category 4">Category 4</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label" >Custom Dropdown</label>
+                                 <div class="controls">
+                                    <select class="span6 chosen" data-placeholder="Choose a Category" tabindex="1">
+                                       <option value=""></option>
+                                       <option value="Category 1">Category 1</option>
+                                       <option value="Category 2">Category 2</option>
+                                       <option value="Category 3">Category 5</option>
+                                       <option value="Category 4">Category 4</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label">Grouped Custom Dropdown</label>
+                                 <div class="controls">
+                                    <select data-placeholder="Your Favorite Football Team" class="chosen span6" tabindex="-1" id="selS0V">
+                                       <option value=""></option>
+                                       <optgroup label="NFC EAST">
+                                          <option>Dallas Cowboys</option>
+                                          <option>New York Giants</option>
+                                          <option>Philadelphia Eagles</option>
+                                          <option>Washington Redskins</option>
+                                       </optgroup>
+                                       <optgroup label="NFC NORTH">
+                                          <option>Chicago Bears</option>
+                                          <option>Detroit Lions</option>
+                                          <option>Green Bay Packers</option>
+                                          <option>Minnesota Vikings</option>
+                                       </optgroup>
+                                       <optgroup label="NFC SOUTH">
+                                          <option>Atlanta Falcons</option>
+                                          <option>Carolina Panthers</option>
+                                          <option>New Orleans Saints</option>
+                                          <option>Tampa Bay Buccaneers</option>
+                                       </optgroup>
+                                       <optgroup label="NFC WEST">
+                                          <option>Arizona Cardinals</option>
+                                          <option>St. Louis Rams</option>
+                                          <option>San Francisco 49ers</option>
+                                          <option>Seattle Seahawks</option>
+                                       </optgroup>
+                                       <optgroup label="AFC EAST">
+                                          <option>Buffalo Bills</option>
+                                          <option>Miami Dolphins</option>
+                                          <option>New England Patriots</option>
+                                          <option>New York Jets</option>
+                                       </optgroup>
+                                       <optgroup label="AFC NORTH">
+                                          <option>Baltimore Ravens</option>
+                                          <option>Cincinnati Bengals</option>
+                                          <option>Cleveland Browns</option>
+                                          <option>Pittsburgh Steelers</option>
+                                       </optgroup>
+                                       <optgroup label="AFC SOUTH">
+                                          <option>Houston Texans</option>
+                                          <option>Indianapolis Colts</option>
+                                          <option>Jacksonville Jaguars</option>
+                                          <option>Tennessee Titans</option>
+                                       </optgroup>
+                                       <optgroup label="AFC WEST">
+                                          <option>Denver Broncos</option>
+                                          <option>Kansas City Chiefs</option>
+                                          <option>Oakland Raiders</option>
+                                          <option>San Diego Chargers</option>
+                                       </optgroup>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label">Custom Dropdown Multiple Select</label>
+                                 <div class="controls">
+                                    <select data-placeholder="Your Favorite Football Teams" class="chosen span6" multiple tabindex="6">
+                                       <option value=""></option>
+                                       <optgroup label="NFC EAST">
+                                          <option>Dallas Cowboys</option>
+                                          <option>New York Giants</option>
+                                          <option>Philadelphia Eagles</option>
+                                          <option>Washington Redskins</option>
+                                       </optgroup>
+                                       <optgroup label="NFC NORTH">
+                                          <option selected>Chicago Bears</option>
+                                          <option>Detroit Lions</option>
+                                          <option>Green Bay Packers</option>
+                                          <option>Minnesota Vikings</option>
+                                       </optgroup>
+                                       <optgroup label="NFC SOUTH">
+                                          <option>Atlanta Falcons</option>
+                                          <option selected>Carolina Panthers</option>
+                                          <option>New Orleans Saints</option>
+                                          <option>Tampa Bay Buccaneers</option>
+                                       </optgroup>
+                                       <optgroup label="NFC WEST">
+                                          <option>Arizona Cardinals</option>
+                                          <option>St. Louis Rams</option>
+                                          <option>San Francisco 49ers</option>
+                                          <option>Seattle Seahawks</option>
+                                       </optgroup>
+                                       <optgroup label="AFC EAST">
+                                          <option>Buffalo Bills</option>
+                                          <option>Miami Dolphins</option>
+                                          <option>New England Patriots</option>
+                                          <option>New York Jets</option>
+                                       </optgroup>
+                                       <optgroup label="AFC NORTH">
+                                          <option>Baltimore Ravens</option>
+                                          <option>Cincinnati Bengals</option>
+                                          <option>Cleveland Browns</option>
+                                          <option>Pittsburgh Steelers</option>
+                                       </optgroup>
+                                       <optgroup label="AFC SOUTH">
+                                          <option>Houston Texans</option>
+                                          <option>Indianapolis Colts</option>
+                                          <option>Jacksonville Jaguars</option>
+                                          <option>Tennessee Titans</option>
+                                       </optgroup>
+                                       <optgroup label="AFC WEST">
+                                          <option>Denver Broncos</option>
+                                          <option>Kansas City Chiefs</option>
+                                          <option>Oakland Raiders</option>
+                                          <option>San Diego Chargers</option>
+                                       </optgroup>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label" >Custom Dropdown Diselect</label>
+                                 <div class="controls">
+                                    <select data-placeholder="Your Favorite Type of Bear" class="chosen-with-diselect span6" tabindex="-1" id="selCSI">
+                                       <option value=""></option>
+                                       <option>American Black Bear</option>Custom Dropdown Multiple Select
+
+                                       <option>Asiatic Black Bear</option>
+                                       <option>Brown Bear</option>
+                                       <option>Giant Panda</option>
+                                       <option selected="">Sloth Bear</option>
+                                       <option>Sun Bear</option>
+                                       <option>Polar Bear</option>
+                                       <option>Spectacled Bear</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label" >Radio Buttons</label>
+                                 <div class="controls">
+                                    <label class="radio">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked />
+                                    Option 1
+                                    </label>
+                                    <div class="clearfix"></div>
+                                    <label class="radio">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" />
+                                    Option 2
+                                    </label>  
+                                    <div class="clearfix"></div>
+                                    <label class="radio">
+                                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option2" />
+                                    Option 3
+                                    </label>  
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label" >Checkbox</label>
+                                 <div class="controls">
+                                    <label class="checkbox">
+                                    <input type="checkbox" value="" /> Checkbox 1
+                                    </label>
+                                    <label class="checkbox">
+                                    <input type="checkbox" value="" /> Checkbox 2
+                                    </label>
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label" >File Upload</label>
+                                 <div class="controls">
+                                    <input type="file"/>
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label" for="inputRemarks">Textarea</label>
+                                 <div class="controls">
+                                    <textarea class="span6" rows="3" id="inputRemarks"></textarea>
+                                 </div>
+                              </div>
+                              <div class="form-actions">
+                                 <button type="submit" class="btn btn-info">Save</button>
+                                 <button type="button" class="btn">Cancel</button>
+                              </div>
+                           </form>
+                           <!-- END FORM-->				
+                        </div>
+                     </div>
+                     <!-- END SAMPLE FORM PORTLET-->
+                  </div>
+               </div>
+               <div class="row-fluid">
+                  <div class="span12">
+                     <!-- BEGIN PORTLET-->	
+                     <div class="widget">
+                        <div class="widget-title">
+                           <h4><i class="icon-reorder"></i>Color Pickers</h4>
+                           <span class="tools">
+                           		
+                           <a href="javascript:;" class="icon-remove"></a>
+                           </span>							
+                        </div>
+                        <div class="widget-body form">
+                           <!-- BEGIN FORM-->
+                           <form action="#" class="form-horizontal">
+                              <div class="control-group">
+                                 <label class="control-label" >Default</label>
+                                 <div class="controls">
+                                    <input type="text" class="colorpicker-default" value="#8fff00" />
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label" >RGBA</label>
+                                 <div class="controls">
+                                    <input type="text" class="colorpicker-rgba" value="rgb(0,194,255,0.78)" data-color-format="rgba" />
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label" >As Component</label>
+                                 <div class="controls">
+                                    <div class="input-append color colorpicker-default" data-color="#3865a8" data-color-format="rgba">
+                                       <input type="text" class="input-small" value="#3865a8" readonly />
+                                       <span class="add-on"><i style="background-color: #3865a8"></i></span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </form>
+                           <!-- END FORM-->	
+                        </div>
+                     </div>
+                     <!-- END PORTLET-->
+                  </div>
+               </div>
+               <div class="row-fluid">
+                  <div class="span12">
+                     <!-- BEGIN PORTLET-->	
+                     <div class="widget">
+                        <div class="widget-title">
+                           <h4><i class="icon-reorder"></i>Time Pickers</h4>
+                           <span class="tools">
+                           		
+                           <a href="javascript:;" class="icon-remove"></a>
+                           </span>							
+                        </div>
+                        <div class="widget-body form">
+                           <!-- BEGIN FORM-->
+                           <form action="#" class="form-horizontal">
+                              <div class="control-group">
+                                 <label class="control-label" >Default Timepicker</label>
+                                 <div class="controls">
+                                    <div class="input-append bootstrap-timepicker-component">
+                                       <input class="input-small timepicker-default" type="text" /><span class="add-on"><i class="icon-time"></i></span>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label" >24hr Timepicker</label>
+                                 <div class="controls">
+                                    <div class="input-append bootstrap-timepicker-component">
+                                       <input class="timepicker-24 input-small" type="text" /><span class="add-on"><i class="icon-time"></i></span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </form>
+                           <!-- END FORM-->	
+                        </div>
+                     </div>
+                     <!-- END PORTLET-->
+                  </div>
+               </div>
+               <div class="row-fluid">
+                  <div class="span12">
+                     <!-- BEGIN PORTLET-->	
+                     <div class="widget">
+                        <div class="widget-title">
+                           <h4><i class="icon-reorder"></i>Date Pickers</h4>
+                           <span class="tools">
+                           		
+                           <a href="javascript:;" class="icon-remove"></a>
+                           </span>							
+                        </div>
+                        <div class="widget-body form">
+                           <!-- BEGIN FORM-->
+                           <form action="#" class="form-horizontal">
+                              <div class="control-group">
+                                 <label class="control-label" >Default datepicker</label>
+                                 <div class="controls">
+                                    <input class="input-small date-picker" size="16" type="text" value="12-02-2012" />
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label" >Starts with years view</label>
+                                 <div class="controls">
+                                    <div class="input-append date date-picker" data-date="12-02-2012" data-date-format="dd-mm-yyyy" data-date-viewmode="years">
+                                       <input class="input-small date-picker" size="16" type="text" value="12-02-2012" /><span class="add-on"><i class="icon-calendar"></i></span>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label" >Limit the view mode to months</label>
+                                 <div class="controls">
+                                    <div class="input-append date date-picker" data-date="102/2012" data-date-format="mm/yyyy" data-date-viewmode="years" data-date-minviewmode="months">
+                                       <input class="input-small date-picker" size="16" type="text" value="02/2012" /><span class="add-on"><i class="icon-calendar"></i></span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </form>
+                           <!-- END FORM-->	
+                        </div>
+                     </div>
+                     <!-- END PORTLET-->
+                  </div>
+               </div>
+               <div class="row-fluid">
+                  <div class="span12">
+                     <!-- BEGIN PORTLET-->	
+                     <div class="widget">
+                        <div class="widget-title">
+                           <h4><i class="icon-reorder"></i>Date Range Pickers</h4>
+                           <span class="tools">
+                           		
+                           <a href="javascript:;" class="icon-remove"></a>
+                           </span>							
+                        </div>
+                        <div class="widget-body form">
+                           <!-- BEGIN FORM-->
+                           <form action="#" class="form-horizontal">
+                              <div class="control-group">
+                                 <label class="control-label">Default Date Ranges</label>
+                                 <div class="controls">
+                                    <div class="input-prepend">
+                                       <span class="add-on"><i class="icon-calendar"></i></span><input type="text" class="input-small date-range" />
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label" >Advance Date Ranges</label>
+                                 <div class="controls">
+                                    <div id="form-date-range" class="report-range-container">
+                                       <i class="icon-calendar icon-large"></i><span></span> <b class="caret"></b>
+                                    </div>
+                                 </div>
+                              </div>
+                           </form>
+                           <!-- END FORM-->	
+                        </div>
+                     </div>
+                     <!-- END PORTLET-->
+                  </div>
+               </div>
+               <div class="row-fluid">
+                  <div class="span12">
+                     <!-- BEGIN CUSTOM FORMS PORTLET-->
+                     <div class="widget">
+                        <div class="widget-title">
+                           <h4><i class="icon-reorder"></i>Custom  Forms</h4>
+                           <span class="tools">
+                           		
+                           <a href="javascript:;" class="icon-remove"></a>
+                           </span>							
+                        </div>
+                        <div class="widget-body form">
+                           <h5>Inline Form</h5>
+                           <form class="form-inline">
+                              <input type="text" class="input-small" placeholder="Email" />
+                              <input type="password" class="input-small" placeholder="Password" />
+                              <label class="checkbox">
+                              <input type="checkbox" /> Remember me
+                              </label>
+                              <button type="submit" class="btn">Sign in</button>
+                           </form>
+                           <h5>Search Forms</h5>
+                           <form class="form-search">
+                              <input type="text" class="input-xlarge search-query" />
+                              <button type="submit" class="btn">Search</button>
+                           </form>
+                           <h5>Search Forms</h5>
+                           <form class="form-search">
+                              <div class="input-append">
+                                 <input class="input-xlarge" id="appendedInputButton" type="text" />
+                                 <button class="btn" type="button">Search!</button>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                     <!-- END CUSTOM FORMS PORTLET-->
+                  </div>
+               </div>
+               <div class="row-fluid">
+                  <div class="span12">
+                     <!-- BEGIN EXTRAS PORTLET-->
+                     <div class="widget">
+                        <div class="widget-title">
+                           <h4><i class="icon-reorder"></i>Extras</h4>
+                           <span class="tools">
+                           		
+                           <a href="javascript:;" class="icon-remove"></a>
+                           </span>							
+                        </div>
+                        <div class="widget-body form">
+                           <!-- BEGIN FORM-->
+                           <form action="#" class="form-horizontal">
+                              <div class="control-group">
+                                 <label class="control-label" >Right Action Input</label>
+                                 <div class="controls">
+                                    <div class="input-append">
+                                       <input class="span12" id="appendedDropdownButton" type="text" />
+                                       <div class="btn-group">
+                                          <button class="btn dropdown-toggle" data-toggle="dropdown"  style="width:100%;">Action <span class="caret"></span></button>
+                                          <ul class="dropdown-menu">
+                                             <li><a href="#">Action</a></li>
+                                             <li><a href="#">Another action</a></li>
+                                             <li><a href="#">Something else here</a></li>
+                                             <li class="divider"></li>
+                                             <li><a href="#">Separated link</a></li>
+                                          </ul>
+                                       </div>
+                                       <!-- /btn-group -->
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label" >Left Action Input</label>
+                                 <div class="controls">
+                                    <div class="input-prepend">
+                                       <div class="btn-group">
+                                          <button class="btn dropdown-toggle" data-toggle="dropdown"  style="width:100%;">Action <span class="caret"></span></button>
+                                          <ul class="dropdown-menu">
+                                             <li><a href="#">Action</a></li>
+                                             <li><a href="#">Another action</a></li>
+                                             <li><a href="#">Something else here</a></li>
+                                             <li class="divider"></li>
+                                             <li><a href="#">Separated link</a></li>
+                                          </ul>
+                                       </div>
+                                       <!-- /btn-group -->
+                                       <input class="span12" id="prependedDropdownButton" type="text" />
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label" >Basic Toggle Button</label>
+                                 <div class="controls">
+                                    <div class="basic-toggle-button">
+                                       <input type="checkbox" class="toggle" checked="checked" />
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label" >Toggle Buttons with Text</label>
+                                 <div class="controls">
+                                    <div class="text-toggle-button">
+                                       <input type="checkbox" class="toggle" />
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label" >Styled Toggle Button</label>
+                                 <div class="controls">
+                                    <div class="danger-toggle-button">
+                                       <input type="checkbox" class="toggle" checked="checked" />
+                                    </div>
+                                    <div class="info-toggle-button">
+                                       <input type="checkbox" class="toggle" checked="checked" />
+                                    </div>
+                                    <div class="success-toggle-button">
+                                       <input type="checkbox" class="toggle" checked="checked" />
+                                    </div>
+                                    <div class="warning-toggle-button">
+                                       <input type="checkbox" class="toggle" checked="checked" />
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label" >Height Toggle Button</label>
+                                 <div class="controls">
+                                    <div class="height-toggle-button">
+                                       <input type="checkbox" class="toggle" checked="checked" />
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="control-group">
+                                 <label class="control-label" >WYSIWYG Editor</label>
+                                 <div class="controls">
+                                    <textarea class="span12 wysihtml5" rows="6" ></textarea>
+                                 </div>
+                              </div>
+                              <div class="form-actions">
+                                 <button type="submit" class="btn btn-info">Save</button>
+                                 <button type="button" class="btn">Cancel</button>
+                              </div>
+                           </form>
+                           <!-- END FORM-->
+                        </div>
+                     </div>
+                     <!-- END EXTRAS PORTLET-->
+                  </div>
+               </div>
+               
+            </div>
+            <!-- END PAGE CONTENT-->			
+         </div>
+         <!-- END PAGE CONTAINER-->
+      </div>
+      <!-- END PAGE -->  
+   </div>
+   <!-- END CONTAINER -->
+   <!-- BEGIN FOOTER -->
+   <div id="footer">
+      
+      <div class="span pull-right">
+         <span class="go-top"><i class="icon-arrow-up"></i></span>
+      </div>
+   </div>
+   <!-- END FOOTER -->
+   <!-- BEGIN JAVASCRIPTS -->		
+   <!-- Load javascripts at bottom, this will reduce page load time -->
+   <script src="assets/js/jquery-1.8.2.min.js"></script>		
+   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+   <script src="assets/js/jquery.blockui.js"></script>
+   <!-- ie8 fixes -->
+   <!--[if lt IE 9]>
+   <script src="assets/js/excanvas.js"></script>
+   <script src="assets/js/respond.js"></script>
+   <![endif]-->
+   <script type="text/javascript" src="assets/chosen-bootstrap/chosen/chosen.jquery.min.js"></script>
+   <script type="text/javascript" src="assets/uniform/jquery.uniform.min.js"></script>
+   <script type="text/javascript" src="assets/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>	
+   <script type="text/javascript" src="assets/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
+   <script type="text/javascript" src="assets/bootstrap-toggle-buttons/static/js/jquery.toggle.buttons.js"></script>
+   <script type="text/javascript" src="assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+   <script type="text/javascript" src="assets/bootstrap-daterangepicker/date.js"></script>
+   <script type="text/javascript" src="assets/bootstrap-daterangepicker/daterangepicker.js"></script>	
+   <script type="text/javascript" src="assets/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>	
+   <script type="text/javascript" src="assets/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+   <script src="assets/fancybox/source/jquery.fancybox.pack.js"></script>
+   <script src="assets/js/app.js"></script>		
+   <script>
+      jQuery(document).ready(function() {			
+      	// initiate layout and plugins
+      	App.init();
+      });
+   </script>
+   <!-- END JAVASCRIPTS -->	
+</body>
+<!-- END BODY -->
+</html>

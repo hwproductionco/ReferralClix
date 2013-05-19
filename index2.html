@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if IE 10]> <html lang="en" class="ie10"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+	<meta charset="utf-8" />
+	<title>ReferralClix Dashboard</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	<link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet" />
+	<link href="assets/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
+	<link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+	<link href="assets/css/style.css" rel="stylesheet" />
+	<link href="assets/css/style_responsive.css" rel="stylesheet" />
+	<link href="assets/css/style_default.css" rel="stylesheet" id="style_color" />
+	<link href="#" rel="stylesheet" id="style_metro" />
+	<link rel="stylesheet" type="text/css" href="assets/uniform/css/uniform.default.css" />
+	<link href="assets/fancybox/source/jquery.fancybox.css" rel="stylesheet" />
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="fixed-top">
+	<!-- BEGIN HEADER -->
+	<div id="header" class="navbar navbar-inverse navbar-fixed-top">
+		<!-- BEGIN TOP NAVIGATION BAR -->
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<!-- BEGIN LOGO -->
+				<a class="brand" href="index.html">
+				Welcome, Loyalty Monster
+				</a>
+				<!-- END LOGO -->
+				<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+				<a class="btn btn-navbar collapsed" id="main_menu_trigger" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="arrow"></span>
+				</a>          
+				<!-- END RESPONSIVE MENU TOGGLER -->				
+				<div class="top-nav">
+					
+					<!-- BEGIN TOP NAVIGATION MENU -->					
+					<ul class="nav pull-right" id="top_menu">
+						<li class="divider-vertical hidden-phone hidden-tablet"></li>
+						<!-- BEGIN USER LOGIN DROPDOWN -->
+						<!-- <li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"  style="width:100%;">
+							<i class="icon-wrench"></i>
+							<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><i class="icon-cogs"></i> System Account Info</a></li>
+								<li><a href="#"><i class="icon-pushpin"></i> Shortcuts</a></li>
+								<li><a href="#"><i class="icon-trash"></i> Trash</a></li>								
+							</ul>
+						</li> -->
+						<!-- END USER LOGIN DROPDOWN -->
+						<li class="divider-vertical hidden-phone hidden-tablet"></li>
+						<!-- BEGIN USER LOGIN DROPDOWN -->
+<li><a href=""><i class="icon-inbox"></i> <span class="label label-success">5</span></a></li>
+<li class="divider-vertical hidden-phone hidden-tablet"></li>
+<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"  style="width:100%;">
+							<i class="icon-cog"></i>
+							<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><i class="icon-user"></i> Mark King</a></li>
+								<li><a href="settings.html"><i class="icon-cogs"></i> Account Info</a></li>
+								<li class="divider"></li>
+								<li><a href="login.html"><i class="icon-key"></i> Log Out</a></li>
+							</ul>
+						</li>
+						<!-- END USER LOGIN DROPDOWN -->
+					</ul>
+					<!-- END TOP NAVIGATION MENU -->	
+				</div>
+			</div>
+		</div>
+		<!-- END TOP NAVIGATION BAR -->
+	</div>
+	<!-- END HEADER -->
+	<!-- BEGIN CONTAINER -->	
+	<div id="container" class="row-fluid">
+		<!-- BEGIN SIDEBAR -->
+		<div id="sidebar" class="nav-collapse collapse">
+			<!-- BEGIN SIDEBAR MENU -->
+			<ul>
+				<li class="active">
+					<a href="index.html">
+					<i class="icon-dashboard"></i> Dashboard
+					</a>					
+				</li>
+				<li class="has-sub">
+					<a href="javascript:;" class="">
+					<i class="icon-group"></i> Leads
+					<span class="arrow"></span>
+					</a>
+					<ul class="sub">
+						<li><a class="" href="manage_customers.html">View All</a></li>
+						<li><a class="" href="import_customers.html">Import Customers</a></li>
+						<li><a class="" href="import_transactions.html">Import Transactions</a></li></ul>
+
+				</li>
+				
+				<li class="has-sub">
+					<a href="javascript:;" class="">
+					<i class="icon-book"></i> Campaigns
+					<span class="arrow"></span>
+					</a>
+                <ul class="sub"><li><a class="" href="view_all_programs.html">View All / Edit</a></li><li><a class="" href="add_new_campaign.html">Add New Campaign</a></li></ul></li><li class="has-sub">
+					<a href="javascript:;" class="">
+					<i class="icon-bar-chart"></i> Reports
+					<span class="arrow"></span>
+					</a>
+					<ul class="sub">
+						<li><a class="" href="all_transactions.html">All Transactions</li></a>
+						<li><a class="" href="redeemed_only.html">Audit: Redeemed Only</a></li>
+						<li><a class="" href="total_transactions.html">Audit: Total</a></li>
+<li><a class="" href="all_customers.html">All Customers</a></li>
+<li><a class="" href="new_customers.html">New Customers</a></li>
+<li><a class="" href="frequent_customers.html">Frequent Customers</a></li>
+<li><a class="" href="Inactive_customers.html">Inactive Advocates</a></li>
+<li><a class="" href="birthday.html">Birthday</a></li>
+<li><a class="" href="custom_date.html">Custom Date</a></li>
+
+<li><a class="" href="customer_balance.html">Customer Balance</a></li><li><a class="" href="#">Videos Created</a></li><li><a class="" href="#">Videos Watched</a></li><li><a class="" href="#">Social Media Integrations</a></li></ul></li>
+				<li class="has-sub">
+					<a href="javascript:;" class="">
+					<i class="icon-group"></i> Users
+					<span class="arrow"></span>
+					</a>
+					<ul class="sub">
+						<li><a class="" href="manage_authorized_users.html">View / Edit</a></li><li><a class="" href="add_new_user.html">Add New User</a></li>
+						</ul></li><li class="has-sub">
+					<a href="javascript:;" class="">
+					<i class="icon-tablet"></i> Apps
+					<span class="arrow"></span>
+					</a>
+					<ul class="sub">
+						<li><a class="" href="view_all_apps.html">View / Edit Apps</a></li><li><a class="" href="add_new_app.html">Create New App</a></li></ul></li>
+				
+			</ul>
+		</div>
+			<!-- END SIDEBAR MENU -->   		
+		<li class="has-sub">
+					<a href="" class="">
+					<i class="icon-info-sign"></i> Technical Support</a>
+					</li>
+					</div>
+		<!-- END SIDEBAR -->
+		<!-- BEGIN PAGE -->
+		<div id="body">
+			
+			<!-- BEGIN PAGE CONTAINER-->
+			<div class="container-fluid">
+
+<!-- BEGIN PAGE HEADER-->
+				<div class="row-fluid">
+					<div class="span12">
+							
+						<!-- BEGIN PAGE TITLE & BREADCRUMB-->		
+						<!--h3 class="page-title">
+							Dashboard
+							<small>statistics and more</small>
+						</h3-->
+						<ul class="breadcrumb">
+							  <div class="row-fluid">
+                     <div class="span12 responsive">
+                     
+                     <div class="span4 responsive">
+                     	<div><strong>Account Name:</strong><br />RCI</div>
+                        <div><strong>Account ID:</strong><br />RCI</div>
+                     </div>
+                     
+                     <div class="span4 responsive">
+                     	<div><strong>Support Phone Number:</strong><br />(555) 444-8877</div>
+                        <div><strong>Support Email:</strong><br /><a href="mailto:support@ReferralClix.com">support@ReferralClix.com</a></div>
+                     </div>
+                      
+                      <div class="span4 responsive" style="text-align:right;">
+                      		<img src="assets/img/RCI_logo.jpg" border="0" style="max-width:125px;" />
+                      </div>
+                      
+                    </div>
+                    
+                  </div>        	<div class="row-fluid">
+                     <div class="span12 responsive">
+                     
+                     <div class="span4 responsive">
+                     	<div><strong>Account Name:</strong><br />RCI</div>
+                        <div><strong>Account ID:</strong><br />RCI</div>
+                     </div>
+                     
+                     <div class="span4 responsive">
+                     	<div><strong>Support Phone Number:</strong><br />(555) 444-8877</div>
+                        <div><strong>Support Email:</strong><br /><a href="mailto:support@ReferralClix.com">support@ReferralClix.com</a></div>
+                     </div>
+                      
+                      <div class="span4 responsive" style="text-align:right;">
+                      		<img src="assets/img/RCI_logo.jpg" border="0" style="max-width:125px;" />
+                      </div>
+                      
+                    </div>
+                    
+                  </div>        	</ul>
+						<!-- END PAGE TITLE & BREADCRUMB-->
+					</div>
+				</div>
+				<!-- END PAGE HEADER-->
+
+			<!-- BEGIN PAGE CONTENT-->
+				 
+                    
+                    <div class="row-fluid">
+						<div class="span8">
+                        	<div class="widget">
+                            	<div class="widget-title"><h4><i class="icon-group"></i>  Most Active Customers</h4>
+                                <span class="tools">								
+							<a href="javascript:;" class="icon-refresh"></a>
+							</span>		</div>
+                                <div class="widget-body">
+                                <table class="table table-bordered table-hover">
+										<thead>
+											<tr>
+												<th style="width:100px;">Card Number</th>
+												<th>Name</th>
+												<th style="width:150px;">Total Number of Visits</th>
+												<th style="width:35px;">Detail</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>John Smith</td>
+												<td class="hidden-phone">150</td>
+												<td><a href="manage_customer_transactions2.html"><span class="label label-success">View</span></a></td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>John Doe</td>
+												<td class="hidden-phone">100</td>
+												<td><a href="manage_customer_transactions2.html"><span class="label label-success">View</span></a></td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>Larry Smith</td>
+												<td class="hidden-phone">95</td>
+												<td><a href="manage_customer_transactions2.html"><span class="label label-success">View</span></a></td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>Sandy Smith</td>
+												<td class="hidden-phone">70</td>
+												<td><a href="manage_customer_transactions2.html"><span class="label label-success">View</span></a></td>
+											</tr>
+                                            
+                                            <tr>
+												<td>4</td>
+												<td>Jane Smith</td>
+												<td class="hidden-phone">65</td>
+												<td><a href="manage_customer_transactions2.html"><span class="label label-success">View</span></a></td>
+											</tr>
+                                            
+                                            <tr>
+												<td>5</td>
+												<td>Frank Smith</td>
+												<td class="hidden-phone">40</td>
+												<td><a href="manage_customer_transactions2.html"><span class="label label-success">View</span></a></td>
+											</tr>
+                                            
+                                           
+										</tbody>
+                                        </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                       <div class="span4">
+                        	 <div class="row-fluid">
+                          <div class="span12 responsive" data-tablet="span12" data-desktop="span12">
+							<div class="stats-overview block clearfix">
+								
+								<div class="details">
+									<div class="title" style="text-align:center;"><span style="font-size:14px;">Total Number of Customers</span></div>
+									<div class="numbers good" style="text-align:center; padding-top:13px; padding-bottom:13px;"><span style="font-size:24px; " class="text-success">1360</span></div>
+								</div>
+								
+							</div>
+						</div>
+                        </div>
+                        
+                        <div class="row-fluid">
+                          <div class="span12 responsive" data-tablet="span12" data-desktop="span12">
+							<div class="stats-overview block clearfix">
+								<div class="display stat good huge">
+									<div class="percent">+25%</div>
+								</div>
+								<div class="details">
+									<div class="title">New Customers this Month</div>
+									<div class="numbers">360</div>
+								</div>
+								<div class="progress progress-info">
+									<div class="bar" style="width: 25%"></div>
+								</div>
+							</div>
+						</div>
+                        </div>
+                        
+                        <div class="row-fluid">
+                          <div class="span12 responsive" data-tablet="span12" data-desktop="span12">
+							<div class="stats-overview block clearfix">
+								<div class="display stat good huge">
+									<div class="percent">+25%</div>
+								</div>
+								<div class="details">
+									<div class="title">Total Transactions this Month</div>
+									<div class="numbers">360</div>
+								</div>
+								<div class="progress progress-info">
+									<div class="bar" style="width: 25%"></div>
+								</div>
+							</div>
+						</div>
+                        </div>
+                        
+                        
+                        <div class="row-fluid">
+						<div class="span12 responsive" data-tablet="span12" data-desktop="span12">
+							<div class="stats-overview block clearfix">
+								<div class="display stat good huge">
+									<div class="percent">+16%</div>
+								</div>
+								<div class="details">
+									<div class="title">Rewards Redeemed this Month</div>
+									<div class="numbers">80</div>
+									<div class="progress progress-info">
+										<div class="bar" style="width: 16%"></div>
+									</div>
+								</div>
+							</div>
+					</div>
+                        </div>
+                        
+                   </div>
+               
+                <div class="row-fluid">
+                	<div class="span8">
+					<!-- BEGIN BASIC CHART PORTLET-->
+					<div class="widget">
+						<div class="widget-title">
+							<h4><i class="icon-bar-chart"></i>  Program Activity</h4>
+							<span class="tools">								
+							<a href="javascript:;" class="icon-refresh"></a>
+							</span>							
+						</div>
+						<div class="widget-body">
+							<div id="chart_1" class="chart"></div>
+						</div>
+					</div>
+					<!-- END BASIC CHART PORTLET-->
+					</div>
+                    
+                    <div class="span4">
+                    	<!-- BEGIN Alerts PORTLET-->
+							<div class="widget">
+								<div class="widget-title">
+									<h4><i class="icon-bullhorn"></i>  Alerts</h4>
+									<span class="tools">
+									<a href="javascript:;" class="icon-refresh"></a>
+									</span>							
+								</div>
+								<div class="widget-body">
+									<ul class="item-list scroller padding" data-height="307" data-always-visible="1">
+										<li>
+											<span class="label label-success"><i class="icon-plus"></i></span>
+											<span>New Customer Registered: John Doe</span>
+											<span class="small italic">Just now</span>
+										</li>
+										<li>
+											<span class="label label-success"><i class="icon-plus"></i></span>
+											<span>New Customer Registered: Jane Doe</span>
+											<span class="small italic">15 mins ago</span>
+										</li>
+										<li>
+											<span class="label label-success"><i class="icon-plus"></i></span>
+											<span>New Customer Registered: Frank Smith</span>
+											<span class="small italic">2 hrs ago</span>
+										</li>
+										<li>
+											<span class="label label-success"><i class="icon-coffee"></i></span>
+											<span>Reward Redeemed: Buy 4 Get 1 Free</span>
+											<span class="small italic">11 hrs ago</span>
+										</li>
+										<li>
+											<span class="label label-success"><i class="icon-coffee"></i></span>
+											<span>Reward Redeemed: Coffee Perks Reward</span>
+											<span class="small italic">14 hrs ago</span>
+										</li>
+										<li>
+											<span class="label label-success"><i class="icon-calendar"></i></span>
+											<span>Customer Birthday: John Smith</span>
+											<span class="small italic">15 hrs ago</span>										
+										</li>
+										<li>
+											<span class="label label-success"><i class="icon-plus"></i></span>
+											<span>Customer Birthday: Jane Smith</span>
+											<span class="small italic">15 hrs ago</span>
+										</li>
+										<li>
+											<span class="label label-success"><i class="icon-calendar"></i></span>
+											<span>Customer Registered: Dan Brown</span>
+											<span class="small italic">2 days ago</span>
+										</li>
+										
+									
+									</ul>
+									<div class="space5"></div>
+									<a href="#" class="pull-right">View all Alerts</a>										
+									<div class="clearfix no-top-space no-bottom-space"></div>
+								</div>
+							</div>
+							<!-- END Alerts PORTLET-->
+                    </div>
+                    
+                    <div class="row-fluid">
+                    </div>
+                    
+					</div>
+					
+					
+				</div>
+				<!-- END PAGE CONTENT-->
+			</div>
+			<!-- BEGIN PAGE CONTAINER-->		
+		</div>
+		<!-- END PAGE -->	
+	</div>
+	<!-- END CONTAINER -->
+	<!-- BEGIN FOOTER -->
+	<div id="footer">
+		
+		<div class="span pull-right">
+			<span class="go-top"><i class="icon-arrow-up"></i></span>
+		</div>
+	</div>
+	<!-- END FOOTER -->
+	<!-- BEGIN JAVASCRIPTS -->
+	<!-- Load javascripts at bottom, this will reduce page load time -->
+	<script src="assets/js/jquery-1.8.2.min.js"></script>	
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.blockui.js"></script>	
+	<!-- ie8 fixes -->
+	<!--[if lt IE 9]>
+	<script src="assets/js/excanvas.js"></script>
+	<script src="assets/js/respond.js"></script>
+	<![endif]-->
+	<script src="assets/flot/jquery.flot.js"></script>
+	<script src="assets/flot/jquery.flot.resize.js"></script>
+	<script src="assets/flot/jquery.flot.pie.js"></script>
+	<script src="assets/flot/jquery.flot.stack.js"></script>
+	<script src="assets/flot/jquery.flot.crosshair.js"></script>
+	<script type="text/javascript" src="assets/uniform/jquery.uniform.min.js"></script>	
+	<script src="assets/fancybox/source/jquery.fancybox.pack.js"></script>
+	<script src="assets/js/app.js"></script>		
+	<script>
+		jQuery(document).ready(function() {			
+			// initiate layout and plugins
+			App.init();
+		});
+	</script>
+	<!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>

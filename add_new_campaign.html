@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if IE 10]> <html lang="en" class="ie10"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+	<meta charset="utf-8" />
+	<title>ReferralClix | Campaigns | Add New Campaign</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	<link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet" />
+	<link href="assets/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
+	<link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+	<link href="assets/css/style.css" rel="stylesheet" />
+	<link href="assets/css/style_responsive.css" rel="stylesheet" />
+	<link href="assets/css/style_default.css" rel="stylesheet" id="style_color" />
+	<link href="#" rel="stylesheet" id="style_metro" />
+	<link href="assets/fancybox/source/jquery.fancybox.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="assets/uniform/css/uniform.default.css" />
+	<link rel="stylesheet" href="assets/data-tables/DT_bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="assets/gritter/css/jquery.gritter.css" />
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="fixed-top">
+	<!-- BEGIN HEADER -->
+	<div id="header" class="navbar navbar-inverse navbar-fixed-top">
+		<!-- BEGIN TOP NAVIGATION BAR -->
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<!-- BEGIN LOGO -->
+				<a class="brand" href="index.html">
+				ReferralClix
+				</a>
+				<!-- END LOGO -->
+				<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+				<a class="btn btn-navbar collapsed" id="main_menu_trigger" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="arrow"></span>
+				</a>          
+				<!-- END RESPONSIVE MENU TOGGLER -->				
+				<div class="top-nav">
+					
+					<!-- BEGIN TOP NAVIGATION MENU -->					
+					<ul class="nav pull-right" id="top_menu">
+						<li class="divider-vertical hidden-phone hidden-tablet"></li>
+						<!-- BEGIN USER LOGIN DROPDOWN -->
+						<!-- <li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"  style="width:100%;">
+							<i class="icon-wrench"></i>
+							<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="account_settings.html"><i class="icon-wrench"></i> Account Info</a></li><li><a href="custom_fields.html"><i class="icon-cogs"></i> Custom Fields</a></li>
+								<li><a href="#"><i class="icon-pushpin"></i> Shortcuts</a></li>
+								<li><a href="#"><i class="icon-trash"></i> Trash</a></li>								
+							</ul>
+						</li> -->
+						<!-- END USER LOGIN DROPDOWN -->
+						<li class="divider-vertical hidden-phone hidden-tablet"></li>
+						<!-- BEGIN USER LOGIN DROPDOWN -->
+<li><a href=""><i class="icon-inbox"></i> <span class="label label-success">5</span></a></li>
+<li class="divider-vertical hidden-phone hidden-tablet"></li>
+<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="icon-wrench"></i>
+							<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="configure_predictive_analytics.html"><i class="icon-magic"></i> Lead Scoring</a></li>
+								<!--li><a href="email_settings.html"><i class="icon-envelope-alt"></i> Email Settings</a></li-->
+<li><a href="form_manager.html"><i class="icon-edit"></i> Forms</a></li>
+							</ul>
+						</li>
+						<li class="divider-vertical hidden-phone hidden-tablet"></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"  style="width:100%;">
+							<i class="icon-user"></i>
+							<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="user_info.html"><i class="icon-user"></i> User Info</a></li>
+								<li><a href="account_settings.html"><i class="icon-wrench"></i> Account Info</a></li><li><a href="custom_fields.html"><i class="icon-cogs"></i> Custom Fields</a></li>
+								
+								<li class="divider"></li>
+								<li><a href="login.html"><i class="icon-key"></i> Log Out</a></li>
+							</ul>
+						</li>
+						</li>
+						<!-- END USER LOGIN DROPDOWN -->
+					</ul>
+					<!-- END TOP NAVIGATION MENU -->	
+				</div>
+			</div>
+		</div>
+		<!-- END TOP NAVIGATION BAR -->
+	</div>
+	<!-- END HEADER -->
+	<!-- BEGIN CONTAINER -->
+	<div id="container" class="row-fluid">
+		<!-- BEGIN SIDEBAR -->
+		<div id="sidebar" class="nav-collapse collapse">
+			<!-- BEGIN SIDEBAR MENU -->
+			<ul>
+				<li class="has-sub">
+					<a href="javascript:;" class="">
+					<i class="icon-dashboard"></i> Dashboard<span class="arrow"></span>
+					</a>	<ul class="sub"><li class=""><a href="index.html">Dashboard Home</a><li class=""><a href="regional_visits.html">Registration Visits</a></li><li><a href="site_visits.html">Survey Visits</a></li></ul>				
+				</li>				
+				</li>
+				<li class="has-sub">
+					<a href="javascript:;" class="">
+					<i class="icon-group"></i> Leads
+					<span class="arrow"></span>
+					</a>
+					<ul class="sub">
+						
+                        <li><a class="" href="view_all_soft_leads.html">Soft Leads</a></li>
+                        <li><a class="" href="view_all_qualified_leads.html">Qualified Leads</a></li>
+						<!--li><a class="" href="view_all_advocates.html">Advocates</a></li--><!--li><a class="" href="view_all_participants.html">View All</a></li--><li><a class="" href="add_new_customer.html">Add Lead</a></li>
+						<li><a href="view_all_new_leads.html">Soft or Qualified</a></li>
+						<li><a class="" href="customer_search.html">Advanced Search</a></li>
+						<li></ul>
+
+				</li>
+
+				<li class="has-sub">
+					<a href="javascript:;" class="">
+					<i class="icon-briefcase"></i> Advocates
+					<span class="arrow"></span>
+					</a>
+					<ul class="sub">
+						<li><a class="" href="view_all_advocates.html">View Advocates</a></li>
+						<li><a class="" href="add_new_customer.html">Add Advocate</a></li>
+						<li><a class="" href="customer_search.html">Advanced Search</a></li>
+                        
+                    </ul>
+                </li>
+				
+				
+				<li class="has-sub active">
+					<a href="javascript:;" class="">
+					<i class="icon-book"></i> Campaigns
+					<span class="arrow"></span>
+					</a>
+                 <ul class="sub"><li><a class="" href="view_all_programs.html">View All</a></li>
+                <li class="active"><a class="" href="add_new_campaign.html">Add New Campaign</a></li> 
+                <li><a class="" href="#">Email Builder</a></li><li><a class="" href="form_builder.html">Form Builder</a></li></ul></li><li class="has-sub">
+					<a href="javascript:;" class="">
+					<i class="icon-bar-chart"></i> Reports
+					<span class="arrow"></span>
+					</a>
+					<ul class="sub">
+						<li><a class="" href="all_transactions.html">All Transactions</li></a>
+						<li><a class="" href="redeemed_only.html">Audit: Redeemed Only</a></li>
+						<li><a class="" href="total_transactions.html">Audit: Total</a></li>
+<li><a class="" href="all_customers.html">All Customers</a></li>
+<li><a class="" href="new_customers.html">New Customers</a></li>
+<li><a class="" href="frequent_customers.html">Frequent Customers</a></li>
+<li><a class="" href="Inactive_customers.html">Inactive Advocates</a></li>
+<li><a class="" href="birthday.html">Birthday</a></li>
+<li><a class="" href="custom_date.html">Custom Date</a></li>
+
+<li><a class="" href="customer_balance.html">Customer Balance</a></li><li><a class="" href="#">Videos Created</a></li><li><a class="" href="#">Videos Watched</a></li><li><a class="" href="#">Social Media Integrations</a></li></ul></li>
+
+ <li class="has-sub"><a href="javascript:;" class="">
+					<i class="icon-sitemap"></i> Lead Site<span class="arrow"></span>
+					</a><ul class="sub">
+						<li><a href="lead_site_builder.html">Template Settings</li></a>
+						<li><a class="" href="lead_site_header_builder.html">Text Settings</a></li>
+</ul></li><li class="has-sub">
+					<a href="javascript:;" class="">
+					<i class="icon-tablet"></i> Apps
+					<span class="arrow"></span>
+					</a>
+					<ul class="sub">
+						<li><a class="" href="view_all_apps.html">View Apps</a></li><li><a class="" href="add_new_app.html">Create New App</a></li>
+</ul></li>
+		<li class="has-sub">
+					<a href="" class="">
+					<i class="icon-info-sign"></i> Technical Support</a>
+					</li>
+					</div>
+		<!-- END SIDEBAR -->
+		<!-- BEGIN PAGE -->
+		<div id="body">
+			
+			<!-- BEGIN PAGE CONTAINER-->			
+			<div class="container-fluid">
+				<!-- BEGIN PAGE HEADER-->
+				<div class="row-fluid">
+					<div class="span12">
+						<!-- BEGIN STYLE CUSTOMIZER-->
+						<!-- <div id="styler" class="hidden-phone">
+							<a href="configure_points_program.html"><i class="icon-cog"></i></a>
+							<span class="settings">
+								<span class="text">Style:</span>
+								<span class="colors">
+									<span class="color-default" data-style="default">
+									</span>
+									<span class="color-grey" data-style="grey">
+									</span>
+									<span class="color-navygrey" data-style="navygrey">
+									</span>											
+									<span class="color-red" data-style="red">
+									</span>	
+								</span>
+								<span class="layout">
+									<label class="hidden-phone">
+									<input type="checkbox" class="header" checked value="" />Sticky Header
+									</label><br />
+									<label><input type="checkbox" class="metro" value="" />Metro Style</label>
+									<span class="space5"></span>
+									<a class="btn fancybox-button" data-rel="fancybox-button" title="Conquer Large Desktop Preview"  href="assets/img/demo/desktop.png"><i class="icon-eye-open"></i> Screenshots</a>
+									<a class="fancybox-button" data-rel="fancybox-button" title="Conquer Notebook Preview" href="assets/img/demo/notebook.png"></a>
+									<a class="fancybox-button" data-rel="fancybox-button" title="Conquer Tablet Preview"  href="assets/img/demo/tablet.png"></a>
+									<a class="fancybox-button" data-rel="fancybox-button" title="Conquer Phone Preview"  href="assets/img/demo/phone.png"></a>
+								</span>
+							</span>
+						</div>-->
+						<!-- END STYLE CUSTOMIZER-->    
+						<!-- BEGIN PAGE TITLE & BREADCRUMB-->		
+						<!--h3 class="page-title">
+							Program
+							<small>Add New Program</small>
+						</h3-->
+						<ul class="breadcrumb">
+							<!--li>
+								<i class="icon-home"></i>
+								<a href="index.html">Home</a> <span class="divider">/</span>
+							</li>
+							<li><a href="#">Add New Campaign</a> </li-->	 <div class="row-fluid">
+                     <div class="span12 responsive">
+                     
+                     <div class="span4 responsive">
+                     	<div><strong>Account Name:</strong><br />RCI</div>
+                        <div><strong>Account ID:</strong><br />RCI</div>
+                     </div>
+                     
+                     <div class="span4 responsive">
+                     	<div><strong>Support Phone Number:</strong><br />(555) 444-8877</div>
+                        <div><strong>Support Email:</strong><br /><a href="mailto:support@ReferralClix.com">support@ReferralClix.com</a></div>
+                     </div>
+                      
+                      <div class="span4 responsive" style="text-align: right;">
+                      		<img src="assets/img/RCI_logo.jpg" border="0" style="max-width:125px;" />
+                      </div>
+                      
+                    </div>
+                    
+                  </div>        </ul>
+						<!-- END PAGE TITLE & BREADCRUMB-->
+					</div>
+				</div>
+				<!-- END PAGE HEADER-->
+				<!-- BEGIN PAGE CONTENT-->
+				<div id="page" class="dashboard">  
+               
+                </div>
+<div class="row-fluid">
+						<div class="span12">
+							<!-- BEGIN EXAMPLE TABLE PORTLET-->
+							<div class="widget">
+								<div class="widget-title">
+									<h4><i class="icon-ok"></i>  Add New Campaign</h4>
+															
+								</div>
+								<div class="widget-body">
+                                <div class="row-fluid">
+                                <div class="span12">
+                                
+                                <h5>Select a Campaign Type</h5>
+                                
+                                <p>If you haven’t already, make sure to famillarize your self with all the features and possibillities that these five program types offer, on our website’s Ideas section. You will also find there step-by-step instructions on which campaign style to choose, and how to set it up.</p>
+                                
+                               
+                                <!-- BEGIN FORM -->
+                            	<div style="padding-top:15px;">
+                                <table border="0" style="width:370px;" cellspacing="10" cellpadding="3">
+                                	<tr>
+                                    	<td style="width:20px;"><input type="radio" name="optionsRadios2" value="option1" /></td>
+                                        <td style="width:100px;">Points Campaign</td>
+                                        <td style="width:65px;"><a href="#myModal1" role="button" class="btn btn-mini btn-info" data-toggle="modal" style="margin-top:-10px;">More Info</a></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                    	<td><input type="radio" name="optionsRadios2" value="option1" /></td>
+                                        <td>Gift Cards Campaign</td>
+                                        <td><a href="#myModal3" role="button" class="btn btn-mini btn-info" data-toggle="modal" style="margin-top:-10px;">More Info</a></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                    	<td><input type="radio" name="optionsRadios2" value="option1" /></td>
+                                        <td>Buy X Get 1 Free Campaign</td>
+                                        <td><a href="#myModal4" role="button" class="btn btn-mini btn-info" data-toggle="modal" style="margin-top:-10px;">More Info</a></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                    	<td><input type="radio" name="optionsRadios2" value="option1" /></td>
+                                        <td>Event Based Campaign</td>
+                                        <td><a href="#myModal5" role="button" class="btn btn-mini btn-info" data-toggle="modal" style="margin-top:-10px;">More Info</a></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                    	<td><input type="radio" name="optionsRadios2" value="option1" /></td>
+                                        <td>Earn Money Per Event Campaign</td>
+                                        <td><a href="#myModal6" role="button" class="btn btn-mini btn-info" data-toggle="modal" style="margin-top:-10px;">More Info</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                              
+                                                           
+                               <div id="myModal1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+											<h3 id="myModalLabel2">Points Campaigns</h3>
+										</div>
+										<div class="modal-body scroller">
+											<p>Your customers accumulate points based on their purchases, payments, or promotion you define. Points can be redeemed based on custom reward levels.</p>
+
+<p>A points program, like an airline miles programs, lets you:</p>
+
+<p><strong>Assign a certain amount of points per Dollars spent. For example:</strong>
+<ul>
+	<li>5 points for each Dollar</li>
+	<li>.25 points per Dollar</li>
+    </ul>
+    </p>
+
+<p><strong>Define Reward Levels. Some examples:</strong>
+<ul>
+<li>1000 points: 50% off a purchase</li>
+<li>5000 points: Free Widget</li>
+<li>100,000 points: Trip to Disneyland.</li>
+</ul>
+</p>
+
+<p><strong>Define promotions. Some examples:</strong>
+<ul>
+<li>Double-point Tuesdays</li>
+<li>Extra 500 points for pre-booking</li>
+<li>25% Bonus points with Gift Card purchase.</li>
+</ul>
+</p>
+
+<p>Optionally, you can define a Spend-to-Reward Ratio that allows you to redeem points using a Dollar value.</p>
+										</div>
+										<div class="modal-footer">
+											<button class="btn btn-success" data-dismiss="modal" aria-hidden="true"><i class="icon-check"></i> OK</button>
+										</div>
+									</div>
+                              
+                              
+                               <div id="myModal3" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+											<h3 id="myModalLabel3">Gift Card Campaign</h3>
+										</div>
+										<div class="modal-body">
+												<p>A Gift Card campaign allows you to add money to a customer\'s account, and deduct it when used as payment.</p>
+
+<p>Simple and straightforward. It\'s usually used in conjunction with plastic gift cards, where a card is loaded with a certain cash value to be given out as a present or to be used as a pre-paid debit card.</p>
+
+<p><strong>Plastic cards are not needed,</strong> and it can be used any time you simply need to keep track of multiple stored value accounts, such as bar tabs, installment purchase plans, kids' allowance... your imagination is the only limit.</p>
+										</div>
+										<div class="modal-footer">
+											<button class="btn btn-success" data-dismiss="modal" aria-hidden="true"><i class="icon-check"></i> OK</button>
+										</div>
+									</div>
+                                    
+                                     <div id="myModal4" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+											<h3 id="myModalLabel4">Buy X Get 1 Free Campaign</h3>
+										</div>
+										<div class="modal-body">
+											<p>	Like the paper punch-card it replaces, only much more flexible, this campaign style allows you to reward your customers based on the number of times they purchase <strong>any number of different</strong> products, product lines, or services.</p>
+                                            
+                                            <p>Great for coffee houses and any store that offers a limited menu of items or types of items. (Like buy 10 regulars coffees and get the next free, buy 3 mugs and get the next one free, etc. Define as many of these Buy 'X' and Get One Free promotions as you want.) It's often encountered in the form of paper cards with a certain number of squares to be punched-out before receiving a free item or service. This type of campaign allows you to do the same, but now without the necessity of printing cards (and dealing with lost ones, etc.) Another immense benefit is that you know how many customers you have on the program and you can run marketing reports on them.</p>
+                                            
+                                            <p><strong>You can assign any number of items or item categories a specific number until the customer can receive a free one. For example:</strong>
+                                            <ul>
+                                            	<li>10 haircuts until the next one is free.</li>
+                                                <li>16 lbs of feed until you get one on the house.</li>
+                                                <li>8 Pastries until the next one is free.</li>
+                                                </ul>
+                                                </p>
+                                                
+                                                <p>You can also assign a default X until the next one is free number to make it easier to set up a bunch of items that all redeem at the same level.</p>
+                                            
+                                            
+										</div>
+										<div class="modal-footer">
+											<button class="btn btn-success" data-dismiss="modal" aria-hidden="true"><i class="icon-check"></i> OK</button>
+										</div>
+									</div>
+                                    
+                                     <div id="myModal5" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+											<h3 id="myModalLabel5">Event Based Campaigns</h3>
+										</div>
+										<div class="modal-body">
+											<p>Allows you to define rewards based on the number of interactions customers have with your business, rather than money spent.</p>
+
+<p>It is often used for customer referral campaigns: A business will give a few cards all stamped with the same number to one of its customers, a concierge at a hotel, or a receptionist at a large firm. When one of their referrals comes to your business and hands you one of those cards, your evangelist gets a 'visit' added to their balance. After, for example, 5 'visits' they receive a free service or widget. You get new customers. Everyone wins.</p>
+
+<p>That is just one scenario. People have found some pretty creative ways to use this program.</p>
+
+<p>An Events-Based program lets you:</p>
+
+<p><strong>Assign a number of reward levels. For example:</strong>
+<ul>
+<li>accumulate 5 events and get 10% off</li>
+<li>accumulate 10 visits and get 50% off</li>
+<li>accumulate 20 referrals and get a massage</li>
+</ul>
+
+<p><strong>Some examples:</strong>
+<ul>
+<li>Referral Campaigns as described above.</li>
+<li>Gyms keeping track of routines.</li>
+<li>Product repairs until it gets replaced.</li>
+<li>VIP Club usage.</li>
+<li>etc...</li>
+</ul>
+</p>
+										</div>
+										<div class="modal-footer">
+											<button class="btn btn-success" data-dismiss="modal" aria-hidden="true"><i class="icon-check"></i> OK</button>
+										</div>
+									</div>
+                              
+                              
+                               <div id="myModal6" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+											<h3 id="myModalLabel6">Earn Money per Event Campaigns</h3>
+										</div>
+										<div class="modal-body">
+											<p>A hybrid between a Gift Card and an Event-Based campaign: Reward someone by giving them monetary credit (or actual cash) for each 'event' (store visit, referral, etc.), to be redeemed later for products or services at your establishment.</p>
+
+<p><strong>This type of loyalty programs lets you:</strong>
+<ul>
+<li>Assign how many Dollars are earned for each visit or action</li>
+<li>Redeem any amount from the accumulated balance, just like a gift card</li>
+</ul>
+</p>
+
+<p><strong>Some examples:</strong>
+<ul>
+<li>Referral campaigns: Reward customers, hotel concierges, receptionists at large firms, for sending customers to your business.</li>
+<li>Pay an employee or contractor for repetitive jobs.</li>
+<li>Reward VIP customers with in-house 'monopoly' money to spend on your business.</li>
+<li>Give kids help-around-the-house incentives.</li>
+</ul>
+</p>
+										</div>
+										<div class="modal-footer">
+											<button class="btn btn-success" data-dismiss="modal" aria-hidden="true"><i class="icon-check"></i> OK</button>
+										</div>
+									</div>
+                              
+                              
+                              
+                              
+                              
+
+<div class="control-group" style="padding-top:15px;">
+                                 <label class="control-label" for="input1"><strong>Choose a Campaign Name</strong></label>
+                                 <div class="controls">
+                                    <input type="text" class="span6 popovers" id="input3"  /> <a href="#myModal2" role="button" class="btn btn-info" data-toggle="modal" style="margin-top:-10px;">More Info</a>
+                                 </div>
+                              </div>
+                              
+                              
+                              <div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+											<h3 id="myModalLabel2">Campaign Tips</h3>
+										</div>
+										<div class="modal-body">
+											<p>If you are creating your first campaign, give it a name that starts with ‘Test’ while you try things out - You will be able to create as many campaigns as you want, and pause or delete any unwanted ones. In general, it’s a good idea to use your organisation’s name, if short, or a play on words based on it. Some examples of names: ACME Rewards, Club Red (For a salon called ‘Red’), Roasters (For a coffee shop that caters to bikers), Party Points (For a caterer)"</p>
+										</div>
+										<div class="modal-footer">
+											<button class="btn btn-success" data-dismiss="modal" aria-hidden="true"><i class="icon-check"></i> OK</button>
+										</div>
+									</div>
+                              
+                              
+                            
+                              <div class="form-actions" style="padding-top:35px;">
+                                 <button type="submit" class="btn btn-success"><i class="icon-plus"></i> Add Campaign</button>
+                                 <button type="button" class="btn"><i class="icon-ban-circle"></i> Reset</button>
+                              </div>
+                              
+                              
+                              </div></div>
+                              
+                              <!-- END FORM -->
+									
+                                            </div>
+                                            
+                                    
+                                    </div>
+                                    
+                                    
+								</div>
+                                
+                                
+                                
+							</div>
+							<!-- END EXAMPLE TABLE PORTLET-->
+                            
+                            
+                                   
+                                    
+                            
+                            
+						</div>
+					</div>
+					
+				</div>
+				<!-- END PAGE CONTENT-->
+			</div>
+			<!-- END PAGE CONTAINER-->
+		</div>
+		<!-- END PAGE -->
+	</div>
+	<!-- END CONTAINER -->
+	<!-- BEGIN FOOTER -->
+	<div id="footer">
+		
+		<div class="span pull-right">
+			<span class="go-top"><i class="icon-arrow-up"></i></span>
+		</div>
+	</div>
+	<!-- END FOOTER -->
+	<!-- BEGIN JAVASCRIPTS -->
+	<!-- Load javascripts at bottom, this will reduce page load time -->
+	<script src="assets/js/jquery-1.8.2.min.js"></script>	
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.blockui.js"></script>
+	<!-- ie8 fixes -->
+	<!--[if lt IE 9]>
+	<script src="assets/js/excanvas.js"></script>
+	<script src="assets/js/respond.js"></script>
+	<![endif]-->	
+	<script type="text/javascript" src="assets/data-tables/jquery.dataTables.js"></script>
+	<script type="text/javascript" src="assets/data-tables/DT_bootstrap.js"></script>	
+	<script type="text/javascript" src="assets/uniform/jquery.uniform.min.js"></script>
+    <script type="text/javascript" src="assets/gritter/js/jquery.gritter.js"></script>
+	<script src="assets/fancybox/source/jquery.fancybox.pack.js"></script>
+	<script src="assets/js/app.js"></script>		
+	<script>
+		jQuery(document).ready(function() {			
+			// initiate layout and plugins
+			App.init();
+		});
+	</script>
+</body>
+<!-- END BODY -->
+</html>

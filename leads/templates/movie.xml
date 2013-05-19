@@ -1,0 +1,63 @@
+<movie service="craftsman-1.0">
+  <body>
+    <stack>
+      <effect duration="5" type="none">
+      	<image color="#000000"/>
+      </effect>
+      <text type="zone" top="0.44" left="0" height="0.12" width="1" fontname="landspeedrecord" align="center,center" fontcolor="#FFFFFF">
+        Courtesy of RCI
+      </text>
+    </stack>
+    <transition type="waterdrop" duration="2"/>
+    <stack>
+    	<effect type="diving" duration="3">
+     		<image type="map" center="40.847468,-74.032434" zoom="13" markers="40.847468,-74.032434" size="640x640" mapkey="AIzaSyAgDlLbjDvCP-fu6d3PWwfWC0dMGCEviPU" maptype="satellite"/>
+   		</effect>
+    </stack>
+    <transition type="waterdrop" duration="2"/>
+    <stack>
+      {{user_movie}}
+      <overlay right="0.005" bottom="0.005" width="0.15">
+        <image filename="http://www.ownerreferrals.com/images/rci.png"/>
+      </overlay>
+    </stack>
+    <transition type="crossfade" duration="2"/>
+    <effect duration="3" type="none"><image color="#000000"/></effect>
+  </body>
+</movie>
+<!--
+{"content":[{
+"type":"Movie", 
+  "content":[
+    {
+      "type":"Group", 
+      "data":{"effect":"none", "textDuration":5}, 
+      "content":[
+      	{"type":"TextAddon", "data":{
+      	  "type":"zone",
+          "text":"Courtesy of RCI",
+          "align":"center,center",
+          "font-color":"#FFFFFF",
+          "top":"0.44",
+          "fontname":"landspeedrecord"
+        }}
+        ]
+    },
+    {
+      "type":"Group", 
+      "data":{"effect":"diving", "imageDuration":3}, 
+      "content":[
+        {"type":"ImageElement","data":{
+          "center":"40.847468,-74.032434",
+          "type":"map",
+          "zoom":"13",
+          "markers":"40.847468,-74.032434",
+          "size":"640x640",
+          "mapkey":"AIzaSyAgDlLbjDvCP-fu6d3PWwfWC0dMGCEviPU",
+          "maptype":"satellite"
+        }}      
+        ]
+    }
+  ]
+}],"music_sync":true,"name":"My Vacation Video","pace":"normal","theme":"ID","type":"Project","zoom":0.5}
+-->
