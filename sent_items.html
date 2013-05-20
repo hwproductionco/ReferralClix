@@ -6,7 +6,7 @@
 <!-- BEGIN HEAD -->
 <head>
 	<meta charset="utf-8" />
-	<title>ReferralClix | Configure Lead Scoring</title>
+	<title>ReferralClix | Sent Messages</title>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -91,7 +91,7 @@
 							<ul class="dropdown-menu">
 								<li><a href="inbox.html">Inbox</a></li>
 								
-<li><a href="sent_items.html">Sent</a></li>
+<li><a href="compose_message_screen.html">Compose Message</a></li><li><a href="sent_items.html">Sent</a></li><li><a href="deleted_messages.html">Deleted Messsages</a></li>
 							</ul>
 						</li></li>
 <li class="divider-vertical hidden-phone hidden-tablet"></li>
@@ -271,7 +271,7 @@
       <div class="row-fluid">
         
       <div class="span12">
-     <table class="table table-condensed table-hover">
+     <table class="table table-condensed table-hover" id="active_campaign" data-provides="rowlink">
   <thead>
     <tr>
       <th class="span1"><input type="checkbox"></th>
@@ -285,7 +285,7 @@
   <tbody>
     <tr style="background-color:#eeeeee;">
       <td><input type="checkbox"> </td>
-      <td>John Doe</td>
+      <td><a href="message_screen.html">John Doe</a></td>
       
       <td>Message body goes here</td>
       <td>Sept 1</td>
@@ -293,7 +293,7 @@
     </tr>
     <tr style="background-color:#eeeeee;">
       <td><input type="checkbox"> </td>
-      <td>John Doe</td>
+      <td><a href="message_screen.html">John Doe</a></td>
       <td>Message body goes here</td>
       <td>Sept 4</td>
       <td><span class="label label-warning pull-right">Escalated</span></td>
@@ -301,7 +301,7 @@
     
     <tr  style="background-color:#eeeeee;">
       <td><input type="checkbox"> </td>
-      <td>John Doe</td>
+      <td><a href="message_screen.html">John Doe</a></td>
       <td>Message body goes here</td>
       <td>Sept 13</td>
       <td><span class="label label-success pull-right">Normal</span></td>
@@ -327,7 +327,7 @@
 											<h3 id="myModalLabel2">Delete</h3>
 										</div>
 										<div class="modal-body scroller">
-											<p>You are about to delete these users.  Are you sure you want to continue?</p>
+											<p>You are about to delete these messages.  Are you sure you want to continue?</p>
 
 
 										</div>
@@ -389,6 +389,8 @@
    <script type="text/javascript" src="assets/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>	
    <script type="text/javascript" src="assets/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
    <script src="assets/fancybox/source/jquery.fancybox.pack.js"></script>
+           <script type="text/javascript" src="assets/bootstrap-rowlink/bootstrap-rowlink.js"></script>	
+
    <script src="assets/js/app.js"></script>		
    <script>
       jQuery(document).ready(function() {			

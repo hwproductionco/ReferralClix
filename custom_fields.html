@@ -78,7 +78,7 @@
 							<ul class="dropdown-menu">
 								<li><a href="inbox.html">Inbox</a></li>
 								
-<li><a href="sent_items.html">Sent</a></li>
+<li><a href="compose_message_screen.html">Compose Message</a></li><li><a href="sent_items.html">Sent</a></li><li><a href="deleted_messages.html">Deleted Messsages</a></li>
 							</ul>
 						</li></li>
 <li class="divider-vertical hidden-phone hidden-tablet"></li>
@@ -123,10 +123,11 @@
 		<div id="sidebar" class="nav-collapse collapse">
 			<!-- BEGIN SIDEBAR MENU -->
 			<ul>
-				<li>
-					<a href="index.html">
-					<i class="icon-dashboard"></i> Dashboard
-					</a>					
+				<li class="has-sub">
+					<a href="javascript:;" class="">
+					<i class="icon-dashboard"></i> Dashboard<span class="arrow"></span>
+					</a>	<ul class="sub"><li class=""><a href="index.html">Dashboard Home</a><li class=""><a href="regional_visits.html">Registration Visits</a></li><li><a href="site_visits.html">Survey Visits</a></li></ul>				
+				</li>				
 				</li>
 				<li class="has-sub">
 					<a href="javascript:;" class="">
@@ -134,59 +135,73 @@
 					<span class="arrow"></span>
 					</a>
 					<ul class="sub">
-						<li><a class="" href="manage_customers.html">View All</a></li><li><a class="" href="customer_search.html">Advance Search</a></li>
-						<li><a class="" href="import_customers.html">Import Customers</a></li>
-						<li><a class="" href="import_transactions.html">Import Transactions</a></li></ul>
+						
+                        <li><a class="" href="view_all_soft_leads.html">Soft Leads</a></li>
+                        <li><a class="" href="view_all_qualified_leads.html">Qualified Leads</a></li>
+						<!--li><a class="" href="view_all_advocates.html">Advocates</a></li--><!--li><a class="" href="view_all_participants.html">View All</a></li--><li><a class="" href="add_new_customer.html">Add Lead</a></li>
+						<li><a href="view_all_new_leads.html">Soft or Qualified</a></li>
+						<li><a class="" href="customer_search.html">Advanced Search</a></li>
+						<li></ul>
 
 				</li>
+
+				<li class="has-sub">
+					<a href="javascript:;" class="">
+					<i class="icon-briefcase"></i> Advocates
+					<span class="arrow"></span>
+					</a>
+					<ul class="sub">
+						<li><a class="" href="view_all_advocates.html">View Advocates</a></li>
+						<li><a class="" href="add_new_customer.html">Add Advocate</a></li>
+						<li><a class="" href="customer_search.html">Advanced Search</a></li>
+                        
+                    </ul>
+                </li>
+				
 				
 				<li class="has-sub">
 					<a href="javascript:;" class="">
 					<i class="icon-book"></i> Campaigns
 					<span class="arrow"></span>
 					</a>
-                <ul class="sub"><li><a class="" href="view_all_programs.html">View All</a></li><li><a class="" href="add_new_campaign.html">Add New Campaign</a></li></ul></li><li class="has-sub">
+                <ul class="sub"><li class=""><a class="" href="view_all_programs.html">View All</a></li>
+                <li><a class="" href="add_new_campaign.html">Add New Campaign</a></li> 
+               </ul></li><li class="has-sub">
 					<a href="javascript:;" class="">
 					<i class="icon-bar-chart"></i> Reports
 					<span class="arrow"></span>
 					</a>
 					<ul class="sub">
-						<li><a class="" href="all_transactions.html">All Transactions</a></li>
+						<li><a class="" href="all_transactions.html">All Transactions</li></a>
 						<li><a class="" href="redeemed_only.html">Audit: Redeemed Only</a></li>
 						<li><a class="" href="total_transactions.html">Audit: Total</a></li>
-<li class="active"><a class="" href="all_customers.html">All Customers</a></li>
+<li><a class="" href="all_customers.html">All Customers</a></li>
 <li><a class="" href="new_customers.html">New Customers</a></li>
 <li><a class="" href="frequent_customers.html">Frequent Customers</a></li>
 <li><a class="" href="Inactive_customers.html">Inactive Advocates</a></li>
 <li><a class="" href="birthday.html">Birthday</a></li>
 <li><a class="" href="custom_date.html">Custom Date</a></li>
 
-<li><a class="" href="customer_balance.html">Customer Balance</a></li></ul></li>
-				<li class="has-sub">
-					<a href="javascript:;" class="">
-					<i class="icon-user"></i> Users
-					<span class="arrow"></span>
-					</a>
-					<ul class="sub">
-						<li><a class="" href="manage_authorized_users.html">View</a></li><li><a class="" href="add_new_user.html">Add New User</a></li>
-						</ul></li>
-				<li class="has-sub">
+<li><a class="" href="customer_balance.html">Customer Balance</a></li><li><a class="" href="#">Videos Created</a></li><li><a class="" href="#">Videos Watched</a></li><li><a class="" href="#">Social Media Integrations</a></li></ul></li>
+
+ <li class="has-sub"><a href="javascript:;" class="">
+					<i class="icon-sitemap"></i> Lead Site<span class="arrow"></span>
+					</a><ul class="sub">
+						<li><a href="lead_site_builder.html">Template Settings</li></a>
+						<li><a class="" href="lead_site_header_builder.html">Text Settings</a></li>
+</ul></li><li class="has-sub">
 					<a href="javascript:;" class="">
 					<i class="icon-tablet"></i> Apps
 					<span class="arrow"></span>
 					</a>
 					<ul class="sub">
-						<li><a class="" href="view_all_apps.html">View Apps</a></li><li><a class="" href="add_new_app.html">Create New App</a></li></ul></li>
-				
-			</ul>
+						<li><a class="" href="view_all_apps.html">View Apps</a></li><li><a class="" href="add_new_app.html">Create New App</a></li>
+</ul></li>
 		<li class="has-sub">
 					<a href="" class="">
 					<i class="icon-info-sign"></i> Technical Support</a>
 					</li>
-                    </ul>
-                    </div>
 					</div>
-		<!-- END SIDEBAR -->
 		<!-- BEGIN PAGE -->
 		<div id="body">
 			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
